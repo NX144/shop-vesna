@@ -1,0 +1,2 @@
+# shop-vesna
+magazine
