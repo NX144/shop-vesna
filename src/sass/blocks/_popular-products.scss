@@ -1,0 +1,58 @@
+.popular {
+    margin-top: 80px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #2F3035;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__item {
+        width: 270px;
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        padding: 16px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-like {}
+
+        &-img {
+            margin-top: 10px;
+            width: 166px;
+            height: 187px;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #2F3035;
+            margin-top: 32px;
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            color: #634D3B;
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+    }
+}
