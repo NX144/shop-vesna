@@ -1,0 +1,30 @@
+.discount {
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-top: 25px;
+
+        &-new {
+            color: #D95151;
+            margin-top: 0;
+            margin-right: 5px;
+        }
+
+        &-old {
+            position: relative;
+            margin-top: 0;
+            font-size: 15px;
+            line-height: 25px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border: 1px solid #D95151;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -2px;
+            }
+        }
+    }
+}
