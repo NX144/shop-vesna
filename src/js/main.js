@@ -32,3 +32,34 @@ $('.popular__wrapper').slick({
         }
     ]
 });
+$('.main-slider__block').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>',
+});
+
+function mainCatalogOverlay(catalog, btn, close, active) {
+    let overlayCatalog = document.querySelector(catalog),
+        overlayBtn = document.querySelector(btn),
+        overlayClose = document.querySelector(close),
+        overlayActiveClass = active;
+
+    overlayBtn.addEventListener("click", (e) => {
+        overlayCatalog.classList.add(overlayActiveClass);
+        document.querySelector("body").style.overflow = "hidden";
+    })
+    overlayClose.addEventListener("click", (e) => {
+        overlayCatalog.classList.remove(overlayActiveClass);
+        document.querySelector("body").style.overflow = "unset";
+    })
+}
+
+mainCatalogOverlay(
+    ".overlay-catalog", 
+    ".header__list_item-btn", 
+    ".overlay-catalog__close", 
+    "overlay-catalog-active"
+);

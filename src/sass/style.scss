@@ -6,6 +6,7 @@
 @import "./vars/_colors";
 
 @import "./blocks/_header";
+@import "./blocks/_overlay-catalog";
 @import './blocks/_popular-products';
 @import "./blocks/_discounted-goods";
 @import "./blocks/_main-slider";
@@ -24,4 +25,5 @@ body, button, a {
 .container {
     width: 75%;
     margin: 0 auto;
+    position: relative;
 }
