@@ -92,11 +92,18 @@ a {
         }
 
         &-round {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 26px;
             height: 26px;
             background-color: $main-accent;
             border-radius: 100%;
             margin-right: 12px;
+            img {
+                width: 10px;
+                height: 10px;
+            }
         }
 
         &-number {
