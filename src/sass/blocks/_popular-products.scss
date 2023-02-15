@@ -31,6 +31,15 @@
             position: relative;
             z-index: 10;
             text-align: right;
+            svg {
+                fill: transparent;
+                stroke: black;
+                transition: .1s all ease;
+                path {
+                    fill: transparent;
+                    transition: .1s all ease;
+                }
+            }
         }
 
         &-img {
@@ -73,7 +82,7 @@
             border: none;
             width: 60px;
             height: 40px;
-            background: #634D3B;
+            background: $main-accent2;
             border-radius: 10px 0px 0px 0px;
             cursor: pointer;
 
@@ -83,37 +92,52 @@
                 right: 15px;
                 top: 10px;
             }
+            &-active {
+                background: $main-text;
+            }
         }
 
-        &-hover {
-            width: 100%;
-            height: 100%;
+        // &-hover {
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     transition: all 0.5s;
+
+        // }
+        &::after {
+            content: "посмотреть товар";
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #2F3035;
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 230px;
+            height: 61px;
+            background: #FFFFFF;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 3px;
+            font-weight: 400;
             transition: all 0.5s;
-
-            &:hover {
-                &::after {
-                    content: "посмотреть товар";
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 23px;
-                    color: #2F3035;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 230px;
-                    height: 61px;
-                    background: #FFFFFF;
-                    opacity: 0.9;
-                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-                    border-radius: 3px;
-                    font-weight: 400;
-                }
+            z-index: 1;
+        }
+        &:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            &::after {
+                opacity: 0.9;
+                visibility: visible;
+                transition: all 0.5s;
             }
         }
     }
@@ -161,4 +185,15 @@
 .slick-prev, .slick-next {
     top: 42%;
     transform: translateY(-50%);
+}
+
+.like-active {
+    svg {
+        fill: red;
+        transition: .1s all ease;
+        path {
+            fill: red;
+            transition: .1s all ease;
+        }
+    }
 }

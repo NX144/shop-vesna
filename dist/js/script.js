@@ -146,6 +146,14 @@ function mainCatalogOverlay(catalog, btn, close, active) {
   });
 }
 mainCatalogOverlay(".overlay-catalog", ".header__list_item-btn", ".overlay-catalog__close", "overlay-catalog-active");
+function toggleClassItems(myClass, myClassActive) {
+  let myItemClass = document.querySelectorAll(myClass);
+  myItemClass.forEach(item => {
+    item.addEventListener("click", () => item.classList.toggle(myClassActive));
+  });
+}
+toggleClassItems(".popular__item-like", "like-active");
+toggleClassItems(".popular__item-btn", "popular__item-btn-active");
 
 /***/ })
 
