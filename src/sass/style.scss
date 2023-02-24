@@ -11,6 +11,7 @@
 @import "./blocks/_discounted-goods";
 @import "./blocks/_main-slider";
 @import "./blocks/_catalog-page";
+@import "./blocks/_footer";
 
 
 * {
@@ -29,121 +30,4 @@ a {
     width: 75%;
     margin: 0 auto;
     position: relative;
-}
-
-// FOOTER STYLES BY steffDev144
-
-.footer {
-    margin-top: 155px;
-    padding: 43px 0 91px 0;
-    background-color: $main-base;
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__item {
-        &-img {
-            width: max-content;
-            display: block;
-        }
-        &-title {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: $main-text;
-            &:last-child {
-                text-decoration: underline;
-            }
-        }
-
-        .hover {
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 47px;
-                border: 3px solid $main-accent;
-                left: 0;
-                bottom: -17px;
-            }
-        }
-
-        .mt-20 {
-            margin-top: 20px;
-        }
-
-        &-text {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 23px;
-        }
-
-        &-subtitle {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 12px;
-            color: #48494D;
-            text-decoration: none;
-        }
-
-        &-phone {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        &-round {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 26px;
-            height: 26px;
-            background-color: $main-accent;
-            border-radius: 100%;
-            margin-right: 12px;
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-
-        &-number {
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-
-            a {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 23px;
-                color: #737373;
-                text-decoration: none;
-            }
-        }
-
-        &-social {
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 14px;
-        }
-
-        &-links {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 23px;
-                color: $main-text;
-                text-decoration: none;
-            }
-        }
-    }
 }
