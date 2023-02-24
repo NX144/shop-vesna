@@ -35,7 +35,7 @@ $('.popular__wrapper').slick({
 $('.main-slider__block').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    autoplay: true,
     slidesToShow: 1,
     prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>',
@@ -82,3 +82,16 @@ toggleClassItems(
     ".popular__item-btn",
     "popular__item-btn-active"
 )
+
+
+// function priceUpdate() {
+//     let downPrice = document.querySelector(".catalog-page__filter_have-price-down"),
+//         upPrice = document.querySelector(".catalog-page__filter_have-price-up"),
+//         formFilter = document.querySelector(".catalog-page__filter"),
+//         blockItems = document.querySelector(".catalog-page__block"),
+//         resultItems = "";
+
+//     formFilter.addEventListener("submit", (e) => {
+
+//     });
+// }

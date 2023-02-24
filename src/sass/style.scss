@@ -10,6 +10,7 @@
 @import './blocks/_popular-products';
 @import "./blocks/_discounted-goods";
 @import "./blocks/_main-slider";
+@import "./blocks/_catalog-page";
 
 
 * {
@@ -43,6 +44,10 @@ a {
     }
 
     &__item {
+        &-img {
+            width: max-content;
+            display: block;
+        }
         &-title {
             font-weight: 700;
             font-size: 14px;
@@ -121,6 +126,7 @@ a {
         }
 
         &-social {
+            width: 70%;
             display: flex;
             justify-content: space-between;
             align-items: center;
