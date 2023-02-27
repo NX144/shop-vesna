@@ -200,6 +200,7 @@ function toggleClassItems(myClass, myClassActive) {
 }
 toggleClassItems(".popular__item-like", "like-active");
 toggleClassItems(".popular__item-btn", "popular__item-btn-active");
+toggleClassItems(".catalog-page__block2__item2-buttons-wrapper-heart", "catalog-page__block2__item2-buttons-wrapper-heart-active");
 
 // function priceUpdate() {
 //     let downPrice = document.querySelector(".catalog-page__filter_have-price-down"),
@@ -212,6 +213,24 @@ toggleClassItems(".popular__item-btn", "popular__item-btn-active");
 
 //     });
 // }
+
+const sortBtn = document.querySelectorAll(".catalog-page__sort_btn");
+sortBtn.forEach(item => {
+  item.addEventListener("click", () => {
+    if (item.classList.contains("catalog-page__sort_cube")) {
+      item.classList.add("catalog-page__sort_cube-active");
+      document.querySelector(".catalog-page__sort_list").classList.remove("catalog-page__sort_list-active");
+      document.querySelector(".catalog-page__block").style.display = "flex";
+      document.querySelector(".catalog-page__block2").style.display = "none";
+    }
+    if (item.classList.contains("catalog-page__sort_list")) {
+      item.classList.add("catalog-page__sort_list-active");
+      document.querySelector(".catalog-page__sort_cube").classList.remove("catalog-page__sort_cube-active");
+      document.querySelector(".catalog-page__block2").style.display = "flex";
+      document.querySelector(".catalog-page__block").style.display = "none";
+    }
+  });
+});
 
 /***/ })
 

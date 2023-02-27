@@ -57,6 +57,7 @@
             margin-right: 123px;
             background-color: $main-accent;
             color: #fff;
+            border-radius: 8px;
             &:hover {
                 background-color: transparent;
                 border-color: $main-accent;
@@ -82,8 +83,202 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    &__block2 {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        display: none;
+        &__item2{
+            position: relative;
+            width: 100%;
+            border: 1px solid #cdcdcd;
+            height: 220px;
+            padding: 21px;
+            padding-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            box-shadow: 4px 8px 8px 0px rgba(34, 60, 80, 0.2);
+            margin-bottom: 30px;
+            &-row {
+                display: flex;
+            }
+            &-have {
+                display: flex;
+                margin-right: 15px;
+            }
+            &-rating {
+                display: flex;
+                &-title {
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-right: 7px;
+                }
+                &-descr {
+                    display: flex;
+                    &-title {
+                        margin-right: 7px;
+                    }
+                    &-syllka{
+                        color: $main-accent;
+                        font-size: 14px;
+                        font-weight: 700;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &-sale {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 63px;
+                height: 25px;
+                background-color: $main-accent;
+                cursor: pointer;
+                &-text {
+                    margin-top: 6px;
+                    text-align: center;
+                    color: $main-base;
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+            &-text {
+                width: 57%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-title {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-top: 10px;
+                }
+            }
+            &-buttons {
+                display: flex;
+                width: 23%;
+                flex-direction: column;
+                margin-top: 18px;
+                align-items: end;
+                &-text{
+                    text-align: center;
+                    width: 117px;
+                    height: 36px;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                &-wrap {
+                    display: flex;
+                    flex-direction: row;
+                        &-red {
+                            color: #D95151;
+                            text-align: center;
+                            width: 117px;
+                            height: 36px;
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                        &-subject {
+                            position: relative;
+                            font-weight: 700;
+                            font-size: 15px;
+                            margin-top: 18px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                border: 1px solid #d95151;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: -2px;
+                            }
+                        }
+                }
+                &-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 14px;
+                    width: 100%;
+                    &-heart {
+                        display: flex;
+                        margin-right: 6px;
+                        width: 42px;
+                        height: 42px;
+                        border: 1px solid #CDCDCD;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        align-items: center;
+                        &-img {
+                           margin: 0 auto;
+                           object-fit: cover;
+                        }
+                        svg {
+                            fill: transparent;
+                            stroke: black;
+                            transition: .1s all ease;
+                            path {
+                                fill: transparent;
+                                transition: .1s all ease;
+                            }
+                        }
+                        &-active {
+                            svg {
+                                fill: red;
+                                transition: .1s all ease;
+                                path {
+                                    fill: red;
+                                    transition: .1s all ease;
+                                }
+                                
+                            }
+                        }
+                    }
+                    &-basket {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 75%;
+                        height: 42px;
+                        border: 1px solid #CDCDCD;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        &-icon  {
+                            text-align: center;
+                            width: 30px;
+                            height: 22px;
+                            object-fit: cover;
+                        }
+                        span {
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 18px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            &-img2 {
+                width: 17%;
+                max-height: 153px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
     &__item {
+        margin: 0;
         margin-bottom: 30px;
+        width: 32%;
         &_sale {
             background-color: $main-accent;
         }
@@ -116,11 +311,27 @@
                     }
                 }
             }
+            &-active {
+                svg {
+                    fill: #adadad;
+                    rect {
+                        fill: #adadad;
+                    }
+                }
+            }
         }
         &_cube {
             margin-left: 34px;
             cursor: pointer;
             &:hover {
+                svg {
+                    stroke: #adadad;
+                    rect {
+                        stroke: #adadad;
+                    }
+                }
+            }
+            &-active {
                 svg {
                     stroke: #adadad;
                     rect {
