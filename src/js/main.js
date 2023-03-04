@@ -95,6 +95,15 @@ $('.inner').slick({
     ]
 });
 
+$('.about__block-inner').slick({
+    dots: true,
+    infinite: false,
+    autoplay: true,
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>',
+});
+
 function mainCatalogOverlay(catalog, btn, close, active) {
     let overlayCatalog = document.querySelector(catalog),
         overlayBtn = document.querySelector(btn),
