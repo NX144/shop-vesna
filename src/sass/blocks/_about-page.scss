@@ -45,6 +45,12 @@
         &-item {
             width: 455px;
             height: 303px;
+            .slick-prev {
+                left: -68px !important;
+            }
+            .slick-next {
+                right: -68px !important;
+            }
         }
         &-inner {
             width: 455px;
