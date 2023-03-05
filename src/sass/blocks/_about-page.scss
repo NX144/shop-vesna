@@ -5,7 +5,7 @@
         font-weight: 500;
         font-size: 36px;
         line-height: 140%;
-        color: #252525;
+        color: $main-text;
     }
     &__line {
         margin-top: 18px;
@@ -21,21 +21,22 @@
             font-weight: 500;
             font-size: 26px;
             line-height: 140%;
-            color: #252525;
+            color: $main-green;
         }
         &-text {
             margin-top: 14px;
             font-weight: 500;
             font-size: 20px;
             line-height: 110%;
-            color: #2F3035;
+            color: $main-text;
         }
         &-descr {
-            width: 546px;
+            width: 45%;
         }
         &-img {
-            width: 455px;
-            height: 303px;
+            position: relative;
+            width: 100%;
+            height: 380px;
             img {
                 width: inherit;
                 height: inherit;
@@ -43,8 +44,9 @@
             }
         }
         &-item {
-            width: 455px;
-            height: 303px;
+            position: relative;
+            width: 100%;
+            height: 380px;
             .slick-prev {
                 left: -68px !important;
             }
@@ -53,8 +55,9 @@
             }
         }
         &-inner {
-            width: 455px;
-            height: 303px;
+            position: relative;
+            width: 45%;
+            height: 380px;
         }
     }
 }

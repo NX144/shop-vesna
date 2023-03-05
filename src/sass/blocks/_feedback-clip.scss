@@ -1,0 +1,24 @@
+.feedback-clip {
+    padding-top: 92px;
+    &__text {
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../img/advantages-component/Group\ 192\ \(1\).png');
+        margin: 0 auto;
+        width: 635px;
+        height: 423px;
+        margin-top: 30px;
+    }
+    &__photo {
+        width: 92px;
+        height: 92px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+}

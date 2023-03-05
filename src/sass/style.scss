@@ -16,7 +16,8 @@
 @import "./blocks/_basket-page";
 @import "./blocks/_cart-page.scss";
 @import "./blocks/_about-page.scss";
-@import "./blocks/advantages";
+@import "./blocks/_advantages";
+@import "./blocks/_feedback-clip";
 
 * {
     padding: 0;
@@ -35,6 +36,3 @@ a {
     margin: 0 auto;
     position: relative;
 }
-
-
-

@@ -5,23 +5,25 @@
         text-align: center;
     }
     &__block {
-        padding: 29px 000;
+        width: 100%;
+        margin-top: 29px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    &__item { 
-        width: 260px;
-        min-height: 345px;
+    &__item {
+        padding: 47px 42px 65px;
+        width: 20%;
+        min-height: 355px;
         border: 3px solid #20AC5F;
         border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &-img {
-            padding: 47px 000;
-            margin: 0 auto;
             width: 50px;
             height: 50px;
             img {
                 width: inherit;
-                height: inherit;
                 object-fit: cover;
             }
         }
@@ -30,39 +32,15 @@
             font-weight: 500;
             font-size: 20px;
             text-align: center;
-            margin-top: 18px;
+            margin-top: 25px;
         }
         &-descr {
             font-weight: 500;
-            font-size: 14px;
+            font-size: 16px;
             text-align: center;
-            width: 67%;
             margin: 0 auto;
             margin-top: 36px;
-        }
-    }
-    &__clip {
-        padding: 92px 0 138px 0;
-        &-text {
-            font-weight: 500;
-            font-size: 30px;
-            text-align: center;
-        }
-        &-video {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('../../img/advantages-component/Group\ 192\ \(1\).png');
-            margin: 0 auto;
-            width: 635px;
-            height: 423px;
-            margin-top: 30px;
-        }
-        &-photo {
-            width: 92px;
-            height: 92px;
-            cursor: pointer;
-            object-fit: cover;
+            color: $main-accent2;
         }
     }
 }
