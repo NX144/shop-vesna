@@ -60,5 +60,29 @@
             height: 380px;
         }
     }
+    .slick-dots {
+        list-style-type: none;
+        bottom: 8px;
+        li {
+            button {
+                &::before {
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 100%;
+                    color: #FFFFFF; 
+                }
+            }
+        }
+    }
+    
+    .slick-active {
+        button {
+            &::before {
+                background: #FFFFFF;
+            }
+        }
+    }
 }
 
