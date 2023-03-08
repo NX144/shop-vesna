@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+@import "./libs/_fonts";
 @import "./libs/_slick-theme";
 @import "./libs/_slick";
 
@@ -28,11 +28,11 @@
 body,
 button,
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gilroy', sans-serif;
 }
 
 .container {
-    width: 75%;
+    width: 76%;
     margin: 0 auto;
     position: relative;
 }
