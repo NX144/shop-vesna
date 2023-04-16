@@ -101,19 +101,19 @@ $('.main-slider__block').slick({
   prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>'
 });
-$('.inner').slick({
+$('.popular__wrapper').slick({
   dots: false,
   prevArrow: '<button type="button" class="slick-prev"><img src="../img/popular-products/prevArrow.png"></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="../img/popular-products/nextArrow.png"></button>',
   infinite: false,
   speed: 300,
-  slidesToShow: 6,
-  slidesToScroll: 6,
+  slidesToShow: 5,
+  slidesToScroll: 1,
   responsive: [{
     breakpoint: 1687,
     settings: {
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToShow: 4,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -121,7 +121,7 @@ $('.inner').slick({
     breakpoint: 1379,
     settings: {
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -129,7 +129,7 @@ $('.inner').slick({
     breakpoint: 1034,
     settings: {
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -137,7 +137,7 @@ $('.inner').slick({
     breakpoint: 600,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 1
     }
   }, {
     breakpoint: 480,

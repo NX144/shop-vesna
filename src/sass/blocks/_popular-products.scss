@@ -13,155 +13,143 @@
         margin-top: 20px;
     }
 
-    &__blocks {
-        
-    }
-
     &__item {
         position: relative;
-        width: 315px !important;
-        border: 1px solid #CDCDCD;
+        width: 240px !important;
         border-radius: 3px;
-        padding: 16px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         cursor: pointer;
-        margin: 0px 20px 0 23px;
+        margin: 0 12px 0 18px;
         border-radius: 15px;
+        padding-bottom: 10px;
+        &-sale {
+            width: 260px !important;
+            margin: 0 12px 0 18px;
+        }
         &:last-child {
             margin-right: 0;
         }
 
-        &-like {
-            position: relative;
-            z-index: 10;
-            text-align: right;
-            svg {
-                fill: transparent;
-                stroke: black;
-                transition: .1s all ease;
-                path {
-                    fill: transparent;
-                    transition: .1s all ease;
+        &_photo {
+            border-radius: 15px;
+            &-img {
+                margin: 0 auto;
+                width: 258px;
+                height: 295px;
+                border-radius: 15px;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+
+                &_sale {
+                    width: 100px;
+                    height: 110px;
+                }
+            }
+            &::after {
+                content: "посмотреть товар";
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                color: #2F3035;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 61px;
+                background: #FFFFFF;
+                opacity: 0;
+                visibility: hidden;
+                border-radius: 15px;
+                font-weight: 400;
+                transition: all 0.5s;
+                z-index: 1;
+            }
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+                &::after {
+                    opacity: 0.9;
+                    visibility: visible;
+                    transition: all 0.5s;
                 }
             }
         }
 
-        &-img {
-            margin: 0 auto;
-            margin-top: 10px;
-            width: 166px;
-            height: 187px;
-
-            img {
-                width: inherit;
-                height: inherit;
-                object-fit: cover;
-            }
-
-            &_sale {
-                width: 100px;
-                height: 110px;
-            }
-        }
-
         &-text {
-            text-align: center;
-            font-weight: 400;
+            width: 95%;
+            margin: 0 auto;
+            font-weight: 500;
             font-size: 18px;
             line-height: 21px;
             color: #2F3035;
-            margin-top: 32px;
+            margin-top: 8px;
         }
 
-        &-price {
-            text-align: center;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 36px;
-            color: #634D3B;
-            text-transform: uppercase;
-            margin-top: 10px;
-            &_sale {
-                font-size: 25px;
-            }
-        }
-
-        &-btn {
-            position: absolute;
-            z-index: 10;
-            right: 0;
-            bottom: 0;
-            border: none;
-            width: 60px;
-            height: 40px;
-            background: $main-accent;
-            border-radius: 10px 0px 0px 0px;
-            cursor: pointer;
-            border-bottom-right-radius: 15px;
-            &::after {
-                content: url("../img/popular-products/basket.png");
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 10px;
-            }
-            &-active {
-                background: $main-text !important;
-            }
-
-            &_sale {
-                width: 53px;
-            }
-        }
-
-        // &-hover {
-        //     width: 100%;
-        //     height: 100%;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     transition: all 0.5s;
-
-        // }
-        &::after {
-            content: "посмотреть товар";
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            color: #2F3035;
+        &_descr {
+            width: 95%;
+            margin: 0 auto;
+            position: relative;
             display: flex;
+            flex-direction: row;
+            margin-top: 9px;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 61px;
-            background: #FFFFFF;
-            opacity: 0;
-            visibility: hidden;
-            border-radius: 3px;
-            font-weight: 400;
-            transition: all 0.5s;
-            z-index: 1;
-        }
-        &:hover {
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-            &::after {
-                opacity: 0.9;
-                visibility: visible;
-                transition: all 0.5s;
+            &-price {
+                width: 77%;
+                position: relative;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 23px;
+                color: $red-color;
+                text-transform: uppercase;
+                span {
+                    width: max-content;
+                    position: relative;
+                    font-size: 15px;
+                    color: $main-text;
+                    margin-left: 6px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 1px;
+                        width: 100%;
+                        background-color: $red-color;
+                    }
+                }
             }
-        }
-
-        &-sale {
-            width: 218px !important;
-            margin: 0 10px 0 9px;
+    
+            &-like {
+                position: relative;
+                z-index: 10;
+                text-align: right;
+                svg {
+                    fill: transparent;
+                    stroke: black;
+                    transition: .1s all ease;
+                    path {
+                        stroke: none;
+                        transition: .1s all ease;
+                    }
+                }
+            }
+    
+            &-btn {
+                border: none;
+                cursor: pointer;
+                background: none;
+                margin-left: 10px;
+                margin-bottom: 3px;
+            }
         }
     }
 
