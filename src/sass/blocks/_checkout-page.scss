@@ -134,13 +134,48 @@
                 margin-top: 20px;
                 width: 423px;
                 height: 57px;
-                background: #236A4D;
+                background: $main-accent;
                 border-radius: 8px;
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 50px;
                 text-align: center;
                 color: #FFFFFF;
+                border: 2px solid $main-accent;
+                cursor: pointer;
+                transition: all .3s;
+                &:hover {
+                    color: $main-accent;
+                    background-color: rgba(0,0,0,0);
+                }
+            }
+            &_polyce {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                input {
+                    width: 16px;
+                    height: 16px;
+                    background: #FFFFFF;
+                    border: 1px solid #C4C4C4;
+                    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+                    border-radius: 100%;
+                    margin-right: 6px;
+                }
+                label {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #2F3035;
+                    cursor: pointer;
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #2F3035;
+                    cursor: pointer;
+                }
             }
         }
     }
