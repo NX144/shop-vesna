@@ -1,5 +1,5 @@
 .requisites {
-    padding: 85px 0 180px 0;
+    padding: 85px 0 80px 0;
     &__block {
         display: flex;
         flex-wrap: wrap;
@@ -49,4 +49,13 @@
 .catalog-page__items {
     margin-right: 18px;
 
+}
+
+
+
+.nav-a {
+    display: flex;
+    &-margin {
+        margin-right: 12px;
+    }
 }

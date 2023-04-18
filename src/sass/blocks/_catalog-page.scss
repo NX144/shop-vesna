@@ -12,7 +12,7 @@
             position: relative;
             &:not(:first-child) {
                 &::after {
-                    content: "";
+                    content: ">";
                     position: absolute;
                     width: auto;
                     height: auto;
