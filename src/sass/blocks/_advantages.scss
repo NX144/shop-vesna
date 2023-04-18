@@ -1,7 +1,9 @@
 .advantages {
+    margin-top: 65px;
     &__title {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 30px;
+        line-height: 140%;
         text-align: center;
     }
     &__block {
@@ -14,7 +16,7 @@
         padding: 47px 42px 65px;
         width: 20%;
         min-height: 355px;
-        border: 3px solid #20AC5F;
+        background-color: $main-base;
         border-radius: 15px;
         display: flex;
         flex-direction: column;

@@ -176,7 +176,7 @@ function toggleClassItems(myClass, myClassActive) {
     item.addEventListener("click", () => item.classList.toggle(myClassActive));
   });
 }
-toggleClassItems(".popular__item-like", "like-active");
+toggleClassItems(".popular__item_descr-like", "like-active");
 toggleClassItems(".popular__item-btn", "popular__item-btn-active");
 toggleClassItems(".catalog-page__block2__item2-buttons-wrapper-heart", "catalog-page__block2__item2-buttons-wrapper-heart-active");
 

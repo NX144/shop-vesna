@@ -102,7 +102,7 @@ function toggleClassItems(myClass, myClassActive) {
 }
 
 toggleClassItems(
-    ".popular__item-like",
+    ".popular__item_descr-like",
     "like-active"
 )
 

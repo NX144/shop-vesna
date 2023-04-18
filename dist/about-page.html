@@ -10,63 +10,78 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__main">
-                <div class="header__main_right">
-                    <a href="/" class="header__main_logo">
-                        <img src="./icons/header-component/logo.png" alt="logo">
-                    </a>
-                    <div class="header__main_city">
-                        <img src="./icons/header-component/map-place.png" alt="map-place">г. Уфа
-                    </div>
-                </div>
-                <div class="header__main_left">
-                    <div class="header__main_input">
-                        <input type="text" placeholder="Поиск" class="header__main_input">
+            <div class="header__block">
+                <div class="header__block_left">
+                    <div class="header__block-hamburger">
+                        <span></span>
+                        <span></span>
                         <span></span>
                     </div>
-                    <div class="header__main_links">
-                        <a href="/" class="header__main_links-a header__main_links-basket">
-                            <img src="./icons/header-component/basket.png" alt="link-busket">
-                            <span>1</span>
+                    
+                    <div class="header__block-city">
+                        <img src="./icons/header-component/map-place.svg" alt="map-place">
+                        <span>г. Уфа,  ул. Ленина 2</span>
+                    </div>
+                </div>
+
+                <div class="header__block_right">
+                    <div class="header__block_right-img">
+                        <img src="icons/header-component/phone.png" alt="phone">
+                    </div>
+                    <div class="header__block_right-link">
+                        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    </div>
+                    <button class="header__block_right-btn">Обратный звонок</button>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <a href="/" class="header__main_logo">
+                    <img src="./icons/header-component/logo.png" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list_item">
+                            <button class="header__list_item-a header__list_item-btn">
+                                <img src="icons/header-component/catalog.png" alt="catolog">
+                                <span>Каталог</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__input">
+                    <input type="text" placeholder="Поиск на весна зелёная..." class="header__input">
+                    <span></span>
+                </div>
+                <div class="header__links">
+                    <div class="header__links-wrapper">
+                        <a href="/" class="header__links-a header__links-basket">
+                            <div class="header__links-img header__links-img_first">
+                                <img src="./icons/header-component/basket.svg" alt="link-busket">
+                            </div>
+                            <span>Корзина</span>
                         </a>
-                        <a href="/" class="header__main_links-a">
-                            <img src="./icons/header-component/like.png" alt="link-like">
+                    </div>
+                    <div class="header__links-wrapper">
+                        <a href="/" class="header__links-a">
+                            <div class="header__links-img">
+                                <img src="./icons/header-component/like.png" alt="link-like">
+                            </div>
+                            <span>Избранное</span>
                         </a>
-                        <a href="/" class="header__main_links-a">
-                            <img src="./icons/header-component/profile.png" alt="link-profile">
+                    </div>
+                    <div class="header__links-wrapper">
+                        <a href="/" class="header__links-a">
+                            <div class="header__links-img">
+                                <img src="./icons/header-component/profile.png" alt="link-profile">
+                            </div>
+                            <span>Профиль</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__list_item">
-                        <a href="/" class="header__list_item-a active-page">Главная</a>
-                    </li>
-                    <li class="header__list_item">
-                        <a href="/" class="header__list_item-a">Оплата и доставка</a>
-                    </li>
-                    <li class="header__list_item">
-                        <button class="header__list_item-a header__list_item-btn">
-                            <svg id="Layer_2" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="m29 31.938h-8.334c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.334c1.654 0 3 1.346 3 3v8.334c0 1.654-1.346 3-3 3zm-8.334-12.334c-.552 0-1 .448-1 1v8.334c0 .552.448 1 1 1h8.334c.552 0 1-.448 1-1v-8.334c0-.552-.448-1-1-1zm-9.333 12.334h-8.333c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.333c1.654 0 3 1.346 3 3v8.334c0 1.654-1.345 3-3 3zm-8.333-12.334c-.551 0-1 .448-1 1v8.334c0 .552.449 1 1 1h8.333c.551 0 1-.448 1-1v-8.334c0-.552-.449-1-1-1zm26-5.27h-8.334c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.334c1.654 0 3 1.346 3 3v8.334c0 1.654-1.346 3-3 3zm-8.334-12.334c-.552 0-1 .448-1 1v8.334c0 .552.448 1 1 1h8.334c.552 0 1-.448 1-1v-8.334c0-.552-.448-1-1-1zm-9.333 12.334h-8.333c-1.654 0-3-1.346-3-3v-8.334c0-1.654 1.346-3 3-3h8.333c1.654 0 3 1.346 3 3v8.334c0 1.654-1.345 3-3 3zm-8.333-12.334c-.551 0-1 .448-1 1v8.334c0 .552.449 1 1 1h8.333c.551 0 1-.448 1-1v-8.334c0-.552-.449-1-1-1z">
-                                </path>
-                            </svg>
-                            <span>Каталог</span>
-                        </button>
-                    </li>
-                    <li class="header__list_item">
-                        <a href="/" class="header__list_item-a">Контакты</a>
-                    </li>
-                    <li class="header__list_item">
-                        <a href="/" class="header__list_item-a">Отзывы</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
+
     <div class="overlay-catalog">
         <div class="overlay-catalog__container">
             <button class="overlay-catalog__close">
@@ -136,46 +151,57 @@
                     </li>
                 </ul>
             </nav>
+            <div class="about__title">«Весна Зелёная» – это тысячи товаров для огорода и сада.</div>
+            <div class="about__descr">
+                14 лет мы стремимся делать для Вас лучшие товары для вашего сада и огорода
+            </div>
+        </div>
+    </section>
 
-            <div class="about__wrapper">
-                <div class="about__title">О компании</div>
-                <div class="about__line"></div>
-                <div class="about__block">
-                    <div class="about__block-descr">
-                        <div class="about__block-subtitle">Собственное производство</div>
-                        <div class="about__block-text">Наша компания имеет собственное производство, которое работает с 2009 года. Свой сварочный, покрасочный и швейный цеха, в которых работают более 50 сотрудников. Благодаря площади складов более 2000 м2. мы имеем возможность совершать отгрузку товара в день заказа! Доставку нашей продукции можем осуществлять любой транспортной компанией либо своим автотранспортом.
-                        </div>
+    <div class="about__wrapper">
+        <div class="container">
+            <div class="about__block">
+                <div class="about__block-descr">
+                    <div class="about__block-text">
+                        Наша компания имеет собственное производство, которое работает с 2009 года. 
+                        <br><br>
+                        Свой сварочный, покрасочный и швейный цеха, в которых работают более 50 сотрудников. Благодаря площади складов более 2000 м2.
+                        <br><br>
+                        Мы имеем возможность совершать отгрузку товара в день заказа! 
+                        <br><br>
+                        Доставку нашей продукции можем осуществлять любой транспортной компанией либо своим автотранспортом.
+
                     </div>
-                    <div class="about__block-inner">
-                        <div class="about__block-item">
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
-                            <div class="about__block-img">
-                                <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
-                            </div>
+                </div>
+                <div class="about__block-inner">
+                    <div class="about__block-item">
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
+                        </div>
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
+                        </div>
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
+                        </div>
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
+                        </div>
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
+                        </div>
+                        <div class="about__block-img">
+                            <img src="img/about-slider/aboutSlideImg.png" alt="aboutSlideImg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="advantages">
         <div class="container">
-            <div class="advantages__title">Наши приемущества</div>
+            <div class="advantages__title">Причины сделать заказ у нас</div>
             <div class="advantages__block">
                 <div class="advantages__item">
                     <div class="advantages__item-img">
