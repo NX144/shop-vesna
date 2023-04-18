@@ -154,20 +154,46 @@
     }
 
     &__btn {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 252px;
         height: 50px;
-        background: #F0F0F4;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 18px;
+        background: #fff;
         text-align: center;
-        color: #2F3035;
-        border: none;
         margin: 0 auto;
         margin-top: 35px;
+        border-radius: 20px;
         cursor: pointer;
-        text-transform: uppercase;
+        border: 2px solid $main-accent;
+        transition: .2s all;
+        span {
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 0.11em;
+            color: $main-accent;
+            margin-bottom: 2px;
+        }
+        svg {
+            margin-left: 8px;
+            margin-top: 1px;
+        }
+        &:hover {
+            background-color: $main-accent;
+            border-color: transparent;
+            filter:  drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+            span {
+                margin-bottom: 0;
+                color: #fff;
+                font-weight: 400;
+            }
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
     }
 
     &__sale {
