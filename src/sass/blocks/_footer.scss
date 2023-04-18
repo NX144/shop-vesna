@@ -1,3 +1,33 @@
+.pageup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    right: 50px;
+    bottom: 50px;
+    width: 48px;
+    height: 48px;
+    background-color: $main-accent;
+    border: 2px solid $main-accent;
+    transition: all .3s;
+    svg {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+        transform: rotateX(180deg);
+    }
+    path {
+        fill: #FFFFFF;
+    }
+    &:hover {
+        background-color: rgba(0,0,0,0);
+        path {
+            fill: $main-accent;
+        }
+    }
+}
+
 .footer {
     margin-top: 115px;
     padding: 55px 0 60px 0;
@@ -13,6 +43,8 @@
         justify-content: space-between;
         margin-top: 50px;
     }
+
+    
 
     &__item {
         &-img {
@@ -36,7 +68,7 @@
                 content: "";
                 position: absolute;
                 width: 47px;
-                border: 3px solid $main-accent;
+                border: 3px solid $main-text;
                 left: 0;
                 bottom: -17px;
             }
@@ -82,7 +114,7 @@
             justify-content: center;
             width: 26px;
             height: 26px;
-            background-color: $main-accent;
+            background-color: $main-text;
             border-radius: 100%;
             margin-right: 12px;
             padding: 5px;
@@ -125,6 +157,41 @@
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 25px;
+        width: 173px;
+        height: 32px;
+        background-color: $main-accent;
+        filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.2));
+        border-radius: 10px;
+        border: 2px solid $main-accent;
+        transition: all .3s;
+        &_img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+        &_title {
+            font-weight: 500;
+            font-size: 11.5px;
+            line-height: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0.05em;
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            div {
+                color: $main-accent;
+            }
+            path {
+                fill: $main-accent;
             }
         }
     }

@@ -212,23 +212,24 @@
         color: #FFFFFF;
         text-transform: uppercase;
     }
+    .slick-track {
+        position: relative;
+        display: flex;
+        justify-content: unset !important;
+    }
+    .slick-prev {
+        left: -4% !important;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+    .slick-next {
+        right: -4.5% !important;
+        top: 42%;
+        transform: translateY(-50%);
+    }
 }
 
-.slick-track {
-    position: relative;
-    display: flex;
-    justify-content: unset !important;
-}
-.slick-prev {
-    left: -4% !important;
-    top: 42%;
-    transform: translateY(-50%);
-}
-.slick-next {
-    right: -4.5% !important;
-    top: 42%;
-    transform: translateY(-50%);
-}
+
 
 .like-active {
     svg {

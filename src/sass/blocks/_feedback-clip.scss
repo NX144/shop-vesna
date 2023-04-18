@@ -1,24 +1,62 @@
 .feedback-clip {
     padding-top: 92px;
+    &__block {
+        padding: 30px 30px;
+        background-color: $main-text;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        border-radius: 25px;
+        background: url("../../img/about-slider/video.png") center center / cover no-repeat;
+    }
     &__text {
-        font-weight: 500;
+        position: relative;
+        font-weight: 800;
         font-size: 30px;
-        text-align: center;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: $main-accent;
+        text-transform: uppercase;
+        &:nth-child(2) {
+            line-height: 125%;
+            color: $main-text;
+            -webkit-text-stroke: .8px $main-accent;
+        }
+        &:nth-child(3) {
+            line-height: 125%;
+            color: $main-text;
+            -webkit-text-stroke: .7px rgba(#C4C4C4, .8);
+        }
+        &:nth-child(4) {
+            line-height: 125%;
+            color: $main-text;
+            -webkit-text-stroke: .7px rgba(#C4C4C4, .65);
+        }
+        &:nth-child(5) {
+            line-height: 125%;
+            color: $main-text;
+            -webkit-text-stroke: .7px rgba(#C4C4C4, .48);
+        }
     }
     &__video {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url('../../img/advantages-component/Group\ 192\ \(1\).png');
-        margin: 0 auto;
         width: 635px;
         height: 423px;
-        margin-top: 30px;
+        border-radius: 25px;
+        border: 1px solid #fff;
     }
     &__photo {
         width: 92px;
         height: 92px;
         cursor: pointer;
         object-fit: cover;
+        transition: .15s all ease;
+        &:hover {
+            border-radius: 100%;
+            box-shadow: 2px 6px rgba(#000, .3);
+        }
     }
 }
