@@ -1,3 +1,33 @@
+.pageup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    right: 50px;
+    bottom: 50px;
+    width: 48px;
+    height: 48px;
+    background-color: $main-accent;
+    border: 2px solid $main-accent;
+    transition: all .3s;
+    svg {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+        transform: rotateX(180deg);
+    }
+    path {
+        fill: #FFFFFF;
+    }
+    &:hover {
+        background-color: rgba(0,0,0,0);
+        path {
+            fill: $main-accent;
+        }
+    }
+}
+
 .footer {
     margin-top: 115px;
     padding: 55px 0 60px 0;
@@ -141,15 +171,12 @@
         background-color: $main-accent;
         filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.2));
         border-radius: 10px;
+        border: 2px solid $main-accent;
+        transition: all .3s;
         &_img {
             width: 16px;
             height: 16px;
             margin-right: 5px;
-            img {
-                height: inherit;
-                width: inherit;
-                object-fit: cover;
-            }
         }
         &_title {
             font-weight: 500;
@@ -157,6 +184,15 @@
             line-height: 14px;
             color: #FFFFFF;
             letter-spacing: 0.05em;
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            div {
+                color: $main-accent;
+            }
+            path {
+                fill: $main-accent;
+            }
         }
     }
 }
