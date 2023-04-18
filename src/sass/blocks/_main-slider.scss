@@ -14,7 +14,7 @@
     }
     .slick-dots {
         list-style-type: none;
-        bottom: 35px;
+        bottom: 25px;
         li {
             button {
                 &::before {
@@ -32,7 +32,7 @@
     .slick-active {
         button {
             &::before {
-                background: #FFFFFF;
+                background: $main-accent;
             }
         }
     }
@@ -66,7 +66,9 @@
     z-index: 5;
 }
 
-
+.slick-dots li {
+    margin: 0 2px;
+}
 
 
 .category {
@@ -83,6 +85,11 @@
             height: 129px;
             border: 1px solid #CDCDCD;
             padding: 0 20px;
+            border-radius: 25px;
+            transition: .3s all ease;
+            &:hover {
+                box-shadow: 2px 2px 17px rgba(50, 50, 50, 0.21);
+            }
             &-title {
                 font-weight: 700;
                 font-size: 20px;
@@ -100,9 +107,9 @@
                     font-size: 20px;
                     text-decoration: none;
                     color: $main-text;
-                    transition: .2s all;
+                    transition: .2s all ease;
                     &:hover {
-                        color: $main-green;
+                        color: $main-accent;
                     }
                 }
                 &-decr {
