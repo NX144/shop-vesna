@@ -10,11 +10,11 @@
         width: 100%;
         margin-top: 29px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     &__item {
         padding: 47px 42px 65px;
-        width: 20%;
+        width: 23%;
         min-height: 355px;
         background-color: $main-base;
         border-radius: 15px;

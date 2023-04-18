@@ -1,3 +1,16 @@
+.parts-1 {
+    position: absolute;
+    left: -0.8%;
+    top: 1350px;
+    overflow: hidden;
+}
+.parts-2 {
+    position: absolute;
+    right: 0;
+    top: 1097px;
+    overflow: hidden;
+}
+
 .about {
     width: 100%;
     min-height: 670px;
@@ -24,9 +37,8 @@
     &__block {
         margin-top: 44px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         &-text {
-            width: 83%;
             margin-top: 20px;
             font-weight: 700;
             font-size: 21px;
