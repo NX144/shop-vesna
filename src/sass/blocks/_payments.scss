@@ -1,0 +1,80 @@
+.payments {
+    padding-top: 80px;
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #2F3035;
+        margin-top: 60px;
+    }
+    &__line {
+        width: 1140px;
+        height: 2px;
+        background: #C4C4C4;
+        margin-top: 17px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-top: 60px;
+        &_first {
+            margin-top: 37px;
+        }
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #2F3035;
+        margin-top: 13px;
+        &_last {
+            font-weight: 500;
+            width: 58%;
+        }
+    }
+    &__img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 26px;
+        &_wrap {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__item {
+        &_nav {
+            margin-top: 60px;
+            &-title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                color: #2F3035;
+            }
+            ol {
+                padding-left: 36px;
+                li {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 180%;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
