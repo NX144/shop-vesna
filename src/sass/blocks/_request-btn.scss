@@ -1,0 +1,21 @@
+.request-btn {
+    width: 235px;
+    height: 55px;
+    background-color: $main-accent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 0 30px;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    transition: .3s all ease;
+    cursor: pointer;
+    &:hover {
+        border-color: $main-accent;
+        background-color: transparent;
+    }
+}
