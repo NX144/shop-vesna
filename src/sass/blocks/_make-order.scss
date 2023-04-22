@@ -1,0 +1,81 @@
+.make-order {
+    &__block {
+        &_item{
+            margin-top: 60px;
+            &-text{
+                text-align: center;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 60px;
+            }
+    &_photo {
+    &-img1 {
+        display: block;
+        margin: 0 auto;
+        width: 1141px;
+        height: 237px;
+        margin-bottom: 60px; 
+        object-fit: cover;
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+                }
+            }
+            &-img2 {
+                display: block;
+                margin: 0 auto;
+                width: 1141px;
+                height: 237px;
+                margin-bottom: 60px; 
+                object-fit: cover;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                        }
+                    }
+                &-img3 {
+                    display: block;
+                    margin: 0 auto;
+                    width: 440px;
+                    height: 301px;
+                    margin-bottom: 60px; 
+                    object-fit: cover;
+                    img {
+                        width: inherit;
+                        height: inherit;
+                        object-fit: cover;
+                    }
+                }
+                &-img4 {
+                    display: block;
+                    margin: 0 auto;
+                    width: 320px;
+                    height: 493px;
+                    margin-bottom: 60px; 
+                    object-fit: cover;
+                    img {
+                        width: inherit;
+                        height: inherit;
+                        object-fit: cover;
+                    }
+                }
+                &-img5 {
+                    display: block;
+                    margin: 0 auto;
+                    width: 297px;
+                    height: 46px;
+                    margin-bottom: 60px; 
+                    object-fit: cover;
+                    img {
+                        width: inherit;
+                        height: inherit;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
