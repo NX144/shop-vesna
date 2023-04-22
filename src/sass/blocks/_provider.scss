@@ -1,0 +1,26 @@
+.provider {
+    width: 100%;
+    min-height: 800px;
+    background: url("../../img/provider/provider-bg.jpg") center center / cover no-repeat;
+    padding: 70px 0 175px 0;
+    &__title {
+        width: 870px;
+        margin-top: 90px;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #fff;
+    }
+    &__descr {
+        width: 610px;
+        margin-top: 45px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+    &__btn {
+        margin-top: 50px;
+    }
+}

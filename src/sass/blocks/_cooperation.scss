@@ -1,0 +1,61 @@
+.cooperation {
+    position: relative;
+    z-index: 0;
+    &__block {
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+        border-radius: 25px;
+        background-color: gray;
+        // border: 3px solid $main-text;
+        padding: 42px 109px 57px 109px;
+        z-index: 5;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -5px;
+            left: -5px;
+            background-color: #fff;
+            border: 3px solid $main-text;
+            border-radius: 25px;
+            z-index: -1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5px;
+            left: 5px;
+            background-color: transparent;
+            border: 3px solid $main-text;
+            border-radius: 25px;
+            z-index: -1;
+            // border-top: 3px solid transparent;
+            // border-left: 3px solid transparent;
+        }
+    }
+    &__text {
+        width: 580px;
+        display: flex;
+        flex-direction: column;
+        color: $main-text;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 52px;
+        margin-bottom: 40px;
+    }
+    &__descr {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+}

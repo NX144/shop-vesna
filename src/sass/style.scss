@@ -15,6 +15,7 @@
 @import "./blocks/_catalog-page";
 @import "./blocks/_requisites";
 @import "./blocks/_footer";
+@import "./blocks/_request-btn";
 @import "./blocks/_checkout-page";
 @import "./blocks/_basket-page";
 @import "./blocks/_cart-page.scss";
@@ -23,8 +24,13 @@
 @import "./blocks/_feedback-clip";
 @import "./blocks/_payments";
 @import "./blocks/make-order";
+@import "./blocks/_provider";
+@import "./blocks/_cooperation";
 @import "./blocks/_delivery";
 @import "./blocks/_terms";
+@import "./blocks/_advantages-company";
+@import "./blocks/_wholesalers";
+
 
 * {
     padding: 0;
