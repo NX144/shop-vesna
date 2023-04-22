@@ -1,0 +1,33 @@
+.wholesalers {
+    &__block {
+        &_wrapp{
+            margin-top: 60px;
+            padding: 75px 97px 75px 97px;
+            background: url("../../img/wholecalers-product/Group\ 224.png") center center / cover no-repeat;;
+            width: 1140px;
+            border-radius: 25px;
+            &_title {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 42px;
+                color: #FFFFFF;
+            }
+            &_descr {
+                width: 65% !important;
+                margin-top: 50px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+            &_descr2 {
+                width: 60%;
+                margin-top: 50px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
