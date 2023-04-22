@@ -1,8 +1,8 @@
 .advantages-buying {
     &__block{
         margin-top: 60px;
-        width: 1140px;
-        padding: 75px 89px 70px 105px;
+        width: 100%;
+        padding: 75px 7% 70px;
         background: linear-gradient(180deg, #64CC44 0%, rgba(32, 172, 95, 0.9) 100%);
         border-radius: 25px;
         &_title {
@@ -20,7 +20,7 @@
             justify-content: space-between;
             flex-direction: column;
             align-items: center;
-            width: 28%;
+            width: 30%;
             &-descr {
                 font-weight: 800;
                 font-size: 21px;
