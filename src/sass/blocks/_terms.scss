@@ -1,0 +1,51 @@
+.terms {
+    &__title {
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #2F3035;
+        text-align: center;
+    }
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        &_title {
+            width: 150px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        &_subtitle {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #2F3035;
+        }
+    }
+}
+
+.money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 670px;
+    height: 53px;
+    background: #F0F0F4;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F3035;
+
+}
