@@ -6,11 +6,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: $main-base;
+    background-color: #fff;
     z-index: 15;
     transition: .4s all ease-in-out;
     &__container {
-        width: 75%;
+        width: 60%;
         margin: 0 auto;
         padding-top: 110px;
     }
@@ -59,6 +59,57 @@
             &:hover {
                 color: $main-green;
             }
+        }
+    }
+    &__menu {
+        position: absolute;
+        height: 100vh;
+        width: 18%;
+        left: 0;
+        top: 0;
+        background-color: $main-base;
+        padding-top: 111px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        &_item {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75%;
+            height: 42px;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 10px 14px;
+            color: $main-text;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 8px;
+            transition: .1s all ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background-color: $main-accent;
+                color: #fff;
+                svg {
+                    fill: #fff;
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+            // &::after {
+            //     content: url("../icons/arrow-right.png");
+            //     position: absolute;
+            //     right: 14px;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            // }
+            // &:nth-child(1) {
+            //     background-color: $main-accent;
+            //     color: #fff;
+            // }
         }
     }
 }

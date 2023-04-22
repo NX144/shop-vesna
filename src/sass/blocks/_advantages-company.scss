@@ -1,7 +1,9 @@
 .advantages-company {
+    position: relative;
     width: 100%;
     margin-top: 60px;
     &__block {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,6 +25,7 @@
         margin: 25px 0 60px;
     }
     &__wrap {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -30,6 +33,7 @@
         list-style-type: none;
     }
     &__item {
+        position: relative;
         width: 32%;
         height: 315px;
         display: flex;
@@ -39,6 +43,8 @@
         padding-bottom: 15px;
         background: linear-gradient(201.49deg, rgba(100, 204, 68, 0.85) 55.1%, rgba(32, 172, 95, 0.68) 98.23%);
         border-radius: 25px;
+        transition: .3s all ease;
+        cursor: pointer;
         &_title {
             width: 80%;
             font-weight: 700;
@@ -47,6 +53,9 @@
             text-align: center;
             color: $main-base;
             margin-bottom: 20px;
+        }
+        &:hover {
+            box-shadow: 3px 3px 13px rgba($main-green, .60);
         }
     }
     &__img {
