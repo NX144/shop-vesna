@@ -1,17 +1,19 @@
 .delivery {
     padding-top: 80px;
     &__wrapper {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         margin-top: 60px;
         padding: 42px 57px 56px 75px;
         width: 100%;
-        min-height: 396px;
         background: linear-gradient(77.82deg, rgba(66, 159, 55, 0.85) 0.61%, rgba(120, 210, 61, 0.6885) 85.69%);
         border-radius: 40px;
     }
     &__block {
+        width: 67%;
         &_title {
-            width: 50%;
+            width: 75%;
             font-weight: 800;
             font-size: 42px;
             line-height: 52px;
@@ -30,6 +32,8 @@
         }
         &_wrap {
             display: flex;
+            max-width: 36%;
+            margin-right: 20px;
         }
         &_img {
             margin-right: 20px;

@@ -1,0 +1,68 @@
+.advantages-company {
+    width: 100%;
+    margin-top: 60px;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 112px;
+        background-color: rgba(#65FF00, .26);
+        border-radius: 40px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $main-text;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $main-text;
+        margin: 25px 0 60px;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__item {
+        width: 32%;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 28px; 
+        padding-bottom: 15px;
+        background: linear-gradient(201.49deg, rgba(100, 204, 68, 0.85) 55.1%, rgba(32, 172, 95, 0.68) 98.23%);
+        border-radius: 25px;
+        &_title {
+            width: 80%;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            color: $main-base;
+            margin-bottom: 20px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        max-height: 172px;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 172px;
+            object-fit: contain;
+        }
+    }
+}
+.img-hand {
+    object-fit: fill !important;
+    max-height: none !important;
+    height: 201px !important;
+}
