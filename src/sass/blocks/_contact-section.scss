@@ -1,0 +1,49 @@
+.contact-section {
+    width: 100%;
+    margin-top: 60px;
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 52px;
+        color: $main-text;
+        text-align: center;
+    }
+    &__block {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 42%;
+        display: flex;
+        flex-direction: column;
+        &_title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: $main-text;
+            margin-bottom: 20px;
+        }
+        &_text {
+            width: max-content;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 160%;
+            color: $main-text;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__wrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-left: 4px solid $main-accent;
+        padding-left: 22px;
+    }
+}
