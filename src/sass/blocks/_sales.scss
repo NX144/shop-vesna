@@ -51,6 +51,7 @@
         color: $main-base;
         margin-right: 50px;
     }
+    
     &__btn {
         width: 216px;
         height: 45px;
@@ -67,4 +68,8 @@
             color:#fff;
         }
     }
+}
+
+.sale__text {
+    width: 45% !important;
 }

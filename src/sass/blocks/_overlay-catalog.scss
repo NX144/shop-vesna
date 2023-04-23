@@ -128,3 +128,42 @@
         opacity: 1;
     }
 }
+
+.overlay-catalog__block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+       
+    &_item {
+        padding: 28px 20px;
+        position: relative;
+        display: flex;
+        width: 23.5%;
+        min-height: 170px;
+        border-radius: 15px;
+        margin-top: 16px;
+        cursor: pointer;
+        transition: .3s all ease;
+        &:hover {
+            box-shadow: 3px 3px 13px rgba($main-text, .60);
+        }
+        img {
+            position: absolute;
+            border-radius: 15px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-text {
+            z-index: 9;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+
+    }
+}
