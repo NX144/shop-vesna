@@ -80,7 +80,6 @@
         width: 75%;
         margin-top: 20px;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
     }
     &__block2 {
@@ -140,6 +139,7 @@
                 height: 25px;
                 background-color: $main-accent;
                 cursor: pointer;
+                border-top-right-radius: 14px;
                 &-text {
                     margin-top: 6px;
                     text-align: center;
@@ -214,13 +214,14 @@
                         border-radius: 10px;
                         cursor: pointer;
                         align-items: center;
+                        background-color: #fff;
                         &-img {
                            margin: 0 auto;
                            object-fit: cover;
                         }
                         svg {
                             fill: transparent;
-                            stroke: black;
+                            stroke: $main-text;
                             transition: .1s all ease;
                             path {
                                 fill: transparent;
@@ -245,9 +246,13 @@
                         justify-content: center;
                         width: 75%;
                         height: 42px;
-                        border: 1px solid #CDCDCD;
+                        border: 2px solid transparent;
                         border-radius: 10px;
                         cursor: pointer;
+                        &:hover {
+                            color: $main-accent;
+                            border-color: $main-accent;
+                        }
                         &-icon  {
                             text-align: center;
                             width: 30px;
@@ -278,12 +283,22 @@
     &__item {
         margin: 0;
         margin-bottom: 30px;
-        width: 32%;
+        width: 22% !important;
+        margin-right: 4%;
         &_sale {
             background-color: $main-accent;
         }
         &_btn {
             background-color: $main-accent;
+        }
+        &_photo {
+            &-img {
+                width: 239px;
+                height: 264px;
+            }
+        }
+        &:nth-child(4n) {
+            margin-right: 0;
         }
     }
     &__sort {

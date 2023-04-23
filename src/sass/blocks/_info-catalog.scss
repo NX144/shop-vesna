@@ -1,0 +1,51 @@
+.info-catalog {
+    width: 100%;
+    margin-top: 60px;
+    position: relative;
+    &__nav {
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 32px;
+        color: $main-text;
+        margin-bottom: 13px;
+    }
+    &__rating {
+        height: 16px;
+        &_title {
+            margin-left: 10px;
+        }
+        margin-right: 20px;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        p {
+            color: #C4C4C4;
+            cursor: pointer;
+        }
+        span {
+            text-decoration: underline;
+            color: #C4C4C4;
+            cursor: pointer;
+        }
+    }
+    &__code {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        &_text {
+            margin-right: 9px;
+        }
+    }
+    &__like {
+        display: flex;
+        align-items: center;
+        &_svg {
+            margin-right: 9px;
+            height: 15px;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 $('.main-slider__block').slick({
     dots: true,
     infinite: true,
