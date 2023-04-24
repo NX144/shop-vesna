@@ -227,6 +227,27 @@
         top: 42%;
         transform: translateY(-50%);
     }
+    .container-60 {
+        .popular__item {
+            width: 196px!important;
+            &_photo {
+                &-img {
+                    width: 211px;
+                    height: 233px;
+                }
+            }
+            &-text {
+                font-size: 15px;
+            }
+            &_descr {
+                &-price {
+                    width: 70%;
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
 }
 
 

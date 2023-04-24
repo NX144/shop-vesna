@@ -51,6 +51,7 @@
         color: $main-base;
         margin-right: 50px;
     }
+    
     &__btn {
         width: 216px;
         height: 45px;
@@ -67,4 +68,31 @@
             color:#fff;
         }
     }
+    .container-60 {
+        .sales__block-50 {
+            height: 145px;
+            .sales__item {
+                width: 95%;
+            }
+            .sales__img {
+                margin-top: 7px;
+                width: 161px;
+                height: 120px;
+            }
+            .sale__text {
+                font-size: 24px;
+                width: 38% !important;
+                line-height: 30px;
+            }
+            .sales__btn {
+                font-size: 18px;
+                border-radius: 25px;
+                width: 45%;
+            }
+        }
+    }
+}
+
+.sale__text {
+    width: 45% !important;
 }

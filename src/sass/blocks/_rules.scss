@@ -1,0 +1,23 @@
+.rules {
+    padding-top: 80px;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+        color: #2F3035;
+        margin-top: 50px;
+        span {
+            margin-right: 22px;
+        }
+    }
+    &__descr {
+        margin-top: 23px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+        letter-spacing: 0.02em;
+        color: #2F3035;
+        margin-left: 41px;
+    }
+}

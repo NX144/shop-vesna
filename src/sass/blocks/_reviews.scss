@@ -1,0 +1,198 @@
+.reviews {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+    }
+    &__comments {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 55px;
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+    &__padding {
+        padding-left: 65px;
+    }
+    &__profile {
+        display: flex;
+        margin-bottom: 17px;
+        align-items: center;
+        &_img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        &_name {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: $main-text;
+        }
+    }
+    &__stars {
+        margin-bottom: 17px;
+    }
+    &__images {
+        display: flex;
+        margin-top: 33px;
+        img {
+            width: 115px;
+            height: 90px;
+            margin-right: 14px;
+            object-fit: cover;
+            border-radius: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba($main-text, .6);
+        margin-bottom: 17px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $main-text;
+    }
+    &__load {
+        display: flex;
+        flex-direction: column;
+        width: 26%;
+        margin: 0 auto;
+        cursor: pointer;
+        span {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-decoration-line: underline;
+            color: #C4C4C4;
+            margin-right: 3px;
+        }
+    }
+    &__block {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__add {
+        width: 60%;
+        height: 120px;
+        resize: none;
+        border: 1px solid #CECECE;
+        border-radius: 15px;
+        padding: 20px 30px 25px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba($main-text, .8);
+        outline: none;
+        &::placeholder {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba($main-text, .8);
+        }
+        &_btn {
+            margin-top: 23px;
+            &:hover {
+                color: $main-accent
+            }
+        }
+    }
+    &__rating {
+        width: 33%;
+        height: max-content !important;
+        padding: 32px 25px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 2px 2px 17px rgba(50,50,50,.21);
+        &_top {
+            display: flex;
+            align-items: center;
+        }
+        border-radius: 20px;
+        &_count {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 34px;
+            color: #2F3035;
+            margin-right: 5px;
+        }
+        &_line {
+            width: 100%;
+            height: 2px;
+            background: #F0F0F4;
+            margin-top: 10px;
+        }
+        &_items {
+            margin-top: 13px;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6px;
+            &-count {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #2F3035;
+            }
+            &-star2 {
+                svg {
+                    fill: rgb(252, 133, 7);
+                }
+            }
+            &-line {
+                width: 75%;
+                height: 5px;
+                background: #D9D9D9;
+                border-radius: 30px;
+                margin-right: 5px;
+            }
+            &-line2 {
+                height: 5px;
+                background: #FC8507;
+                border-radius: 30px;
+            }
+            &-percent {
+                width: 25px;
+                display: flex;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #2F3035;
+            }
+        }
+        &_btn {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 25px;
+            &:hover {
+                color: $main-accent;
+            }
+        }
+    }
+}
