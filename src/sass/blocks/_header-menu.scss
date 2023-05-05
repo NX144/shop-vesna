@@ -1,0 +1,77 @@
+.header-menu {
+    position: relative;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    width: 22%;
+    &__nav {
+        height: 100%;
+        padding: 98px 0 0 76px;
+        background: $main-base;
+    }
+    &__close {
+        position: absolute;
+        right: 27px;
+        top: 42px;
+        cursor: pointer;
+    }
+    &__item {
+        width: 55%;
+        &-title {
+            margin-top: 35px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: $main-text;
+        }
+        &_last {
+            width: 32%;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 21px;
+        &_item {
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+            a {
+                position: relative;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-text;
+                z-index: 10;
+            }
+            &:hover {
+                a {
+                    color: #fff;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 9;
+                    left: -12px;
+                    top: -2px;
+                    width: 116%;
+                    height: 25px;
+                    background: $main-accent;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    &__social {
+        position: absolute;
+        width: 106px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-link {
+            text-decoration: none;
+        }
+    }
+}
