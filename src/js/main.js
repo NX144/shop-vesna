@@ -149,3 +149,15 @@ sortBtn.forEach(item => {
         }
     })
 })
+
+const headerMenu = document.querySelector('.header-menu'),
+      headerMenuClose = document.querySelector('.header-menu__close'),
+      headerHumburger = document.querySelector('.header__block-hamburger');
+
+headerHumburger.addEventListener('click', () => {
+    headerMenu.style.left = 0;
+});
+
+headerMenuClose.addEventListener('click', () => {
+    headerMenu.style.left = '-100%';
+});
