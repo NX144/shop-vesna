@@ -216,7 +216,7 @@ headerHumburger.addEventListener('click', () => {
   headerMenu.style.left = 0;
 });
 headerMenuClose.addEventListener('click', () => {
-  headerMenu.style.left = '-100%';
+  headerMenu.style.left = '-23%';
 });
 
 /***/ })

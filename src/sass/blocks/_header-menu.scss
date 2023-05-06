@@ -1,10 +1,10 @@
 .header-menu {
     height: 100vh;
     position: fixed;
-    left: -100%;
+    left: -23%;
     z-index: 100;
     width: 22%;
-    transition: all .3s;
+    transition: all .55s ease-in-out;
     &__nav {
         height: 100%;
         padding: 98px 0 0 76px;
@@ -41,9 +41,9 @@
             width: 116%;
             height: 25px;
             cursor: pointer;
-            transition: all .2s;
+            transition: all .1s ease;
             a {
-                transition: all .2s;
+                transition: all .1s ease;
                 text-decoration: none;
                 font-weight: 400;
                 font-size: 16px;
