@@ -1,3 +1,4 @@
+const { setTimeout } = require("core-js");
 
 $('.main-slider__block').slick({
     dots: true,
@@ -18,7 +19,7 @@ $('.popular__wrapper').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1687,
+            breakpoint: 1780,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -27,7 +28,7 @@ $('.popular__wrapper').slick({
             }
         },
         {
-            breakpoint: 1379,
+            breakpoint: 1490,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -36,7 +37,7 @@ $('.popular__wrapper').slick({
             }
         },
         {
-            breakpoint: 1034,
+            breakpoint: 756,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -44,20 +45,6 @@ $('.popular__wrapper').slick({
                 dots: true
             }
         },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
     ]
 });
 
@@ -155,9 +142,66 @@ const headerMenu = document.querySelector('.header-menu'),
       headerHumburger = document.querySelector('.header__block-hamburger');
 
 headerHumburger.addEventListener('click', () => {
-    headerMenu.style.left = 0;
+    headerMenu.classList.toggle("header-menu-active");
 });
 
 headerMenuClose.addEventListener('click', () => {
-    headerMenu.style.left = '-23%';
+    headerMenu.classList.toggle("header-menu-active");
 });
+
+
+
+
+
+
+// function expandElement(elem, collapseClass) {
+//     // debugger;
+//     elem.style.height = '';
+//     elem.style.transition = 'none';
+
+//     const startHeight = window.getComputedStyle(elem).height;
+
+//     // Remove the collapse class, and force a layout calculation to get the final height
+//     elem.classList.toggle(collapseClass);
+//     const height = window.getComputedStyle(elem).height;
+
+//     // Set the start height to begin the transition
+//     elem.style.height = startHeight;
+
+//     // wait until the next frame so that everything has time to update before starting the transition
+//     requestAnimationFrame(() => {
+//         elem.style.transition = '';
+
+//         requestAnimationFrame(() => {
+//             elem.style.height = height;
+//         })
+//     })
+
+//     // Clear the saved height values after the transition
+//     elem.addEventListener('transitionend', () => {
+//         elem.style.height = '';
+//         elem.removeEventListener('transitionend', arguments.callee);
+//     });
+// }
+
+const footerItemTitle = document.querySelectorAll(".footer__item-title");
+
+// const footerItemLinks = document.querySelectorAll(".footer__item-links");
+
+// footerItemLinks.forEach(item => {
+//     expandElement(item, 'footer__item-links-active');
+// })
+
+footerItemTitle.forEach(item => {
+    // if(item.nextElementSibling.classList.contains("footer__item-links") && window.innerWidth < 768) {
+    //     expandElement(item, 'footer__item-links-active');
+    // }
+    item.addEventListener("click", (e) => {
+        if(window.innerWidth <= 786) {
+            e.target.nextElementSibling.classList.toggle("footer__item-links-active");
+            
+            // const content = e.target.nextElementSibling;
+            // expandElement(content, 'footer__item-links-active');
+        }
+    })
+})

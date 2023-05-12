@@ -1,6 +1,6 @@
 .popular {
     margin-top: 80px;
-
+    
     &__title {
         font-weight: 700;
         font-size: 25px;
@@ -15,17 +15,17 @@
 
     &__item {
         position: relative;
-        width: 240px !important;
+        width: auto;
         border-radius: 3px;
         display: flex;
         flex-direction: column;
         cursor: pointer;
-        margin: 0 12px 0 18px;
+        margin: auto;
         border-radius: 15px;
         padding-bottom: 10px;
         &-sale {
-            width: 260px !important;
-            margin: 0 12px 0 18px;
+            width: auto;
+            margin: auto;
         }
         &:last-child {
             margin-right: 0;

@@ -11,6 +11,7 @@
     background-color: $main-accent;
     border: 2px solid $main-accent;
     transition: all .3s;
+    z-index: 999999999;
     svg {
         width: 18px;
         height: 18px;
@@ -58,6 +59,12 @@
             color: $main-text;
             &:last-child {
                 text-decoration: underline;
+            }
+            img {
+                width: 16px;
+                cursor: pointer;
+                display: none;
+                height: 8px;
             }
         }
 

@@ -1,14 +1,20 @@
 .header-menu {
-    height: 100vh;
+    overflow: hidden;
+    height: 100%;
     position: fixed;
     left: -23%;
     z-index: 100;
     width: 22%;
     transition: all .55s ease-in-out;
     &__nav {
+        position: relative;
         height: 100%;
-        padding: 98px 0 0 76px;
+        overflow-y: scroll;
+        padding: 22% 0 0 23%;
         background: $main-base;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__close {
         position: absolute;
@@ -17,7 +23,8 @@
         cursor: pointer;
     }
     &__item {
-        width: 55%;
+        width: max-content;
+        position: relative;
         &-title {
             margin-top: 35px;
             font-weight: 700;
@@ -26,19 +33,21 @@
             color: $main-text;
         }
         &_last {
-            width: 32%;
+            width: max-content;
+            padding-bottom: 65px;
         }
     }
     &__list {
+        position: relative;
         list-style-type: none;
         padding-left: 7px;
         &_item {
             margin-top: 10px;
             display: flex;
             align-items: center;
-            padding-left: 13px;
+            padding: 0 13px;
             border-radius: 10px;
-            width: 116%;
+            width: max-content;
             height: 25px;
             cursor: pointer;
             transition: all .1s ease;
@@ -60,15 +69,19 @@
         }
     }
     &__social {
-        position: absolute;
+        position: relative;
         width: 106px;
         display: flex;
         justify-content: space-between;
-        bottom: 44px;
-        left: 50%;
+        bottom: 45px;
+        // left: 50%;
+        margin: 0 auto;
         transform: translateX(-50%);
         &-link {
             text-decoration: none;
         }
     }
+}
+.header-menu-active {
+    left: 0 !important;
 }
