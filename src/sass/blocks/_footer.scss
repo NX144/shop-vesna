@@ -11,7 +11,7 @@
     background-color: $main-accent;
     border: 2px solid $main-accent;
     transition: all .3s;
-    z-index: 999999999;
+    z-index: 1000;
     svg {
         width: 18px;
         height: 18px;
@@ -57,14 +57,17 @@
             font-size: 16px;
             line-height: 16px;
             color: $main-text;
+            user-select: none;
             &:last-child {
                 text-decoration: underline;
             }
             img {
+                transition: .3s all ease-in-out;
                 width: 16px;
                 cursor: pointer;
                 display: none;
                 height: 8px;
+                user-select: none;
             }
         }
 
@@ -161,8 +164,10 @@
                 line-height: 23px;
                 color: $main-text;
                 text-decoration: none;
+                transition: .15s all ease-in-out;
                 &:hover {
                     text-decoration: underline;
+                    color: $main-green;
                 }
             }
         }
@@ -202,4 +207,7 @@
             }
         }
     }
+}
+.arrow-active {
+    transform: rotate(180deg);
 }

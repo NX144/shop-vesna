@@ -29618,12 +29618,14 @@ $('.about__block-item').slick({
 });
 function mainCatalogOverlay(catalog, btn, close, active) {
   let overlayCatalog = document.querySelector(catalog),
-    overlayBtn = document.querySelector(btn),
+    overlayBtn = document.querySelectorAll(btn),
     overlayClose = document.querySelector(close),
     overlayActiveClass = active;
-  overlayBtn.addEventListener("click", e => {
-    overlayCatalog.classList.add(overlayActiveClass);
-    document.querySelector("body").style.overflow = "hidden";
+  overlayBtn.forEach(item => {
+    item.addEventListener("click", e => {
+      overlayCatalog.classList.add(overlayActiveClass);
+      document.querySelector("body").style.overflow = "hidden";
+    });
   });
   overlayClose.addEventListener("click", e => {
     overlayCatalog.classList.remove(overlayActiveClass);
@@ -29710,7 +29712,7 @@ headerMenuClose.addEventListener('click', () => {
 //     });
 // }
 
-const footerItemTitle = document.querySelectorAll(".footer__item-title");
+const footerItem = document.querySelectorAll(".footer__item");
 
 // const footerItemLinks = document.querySelectorAll(".footer__item-links");
 
@@ -29718,17 +29720,24 @@ const footerItemTitle = document.querySelectorAll(".footer__item-title");
 //     expandElement(item, 'footer__item-links-active');
 // })
 
-footerItemTitle.forEach(item => {
+footerItem.forEach(item => {
   // if(item.nextElementSibling.classList.contains("footer__item-links") && window.innerWidth < 768) {
   //     expandElement(item, 'footer__item-links-active');
   // }
   item.addEventListener("click", e => {
     if (window.innerWidth <= 786) {
-      e.target.nextElementSibling.classList.toggle("footer__item-links-active");
-
-      // const content = e.target.nextElementSibling;
-      // expandElement(content, 'footer__item-links-active');
+      // console.dir(e.target);
+      if (e.target && e.target.classList.contains("footer__item-title")) {
+        e.target.nextElementSibling.classList.toggle("footer__item-links-active");
+        e.target.lastChild.classList.toggle("arrow-active");
+      } else if (e.target && e.target.parentNode.classList.contains("footer__item-title")) {
+        e.target.classList.toggle("arrow-active");
+        e.target.parentNode.nextElementSibling.classList.toggle("footer__item-links-active");
+      }
     }
+
+    // const content = e.target.nextElementSibling;
+    // expandElement(content, 'footer__item-links-active');
   });
 });
 
