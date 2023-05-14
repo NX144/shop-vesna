@@ -1,0 +1,48 @@
+@media (max-width: 1445px) {
+    .form-section {
+        .container-60 {
+            width: 90% !important;
+        }
+    }
+}
+@media (max-width: 786px) {
+    .form-section {
+        &__title {
+            width: 90%;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .form-section {
+        &__title {
+            font-size: 29px;
+            line-height: 29px;
+        }
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .form-section {
+        &__title {
+            font-size: 19px;
+            line-height: 19px;
+        }
+        &__check {
+            label, a {
+                font-size: 11px;
+            }
+        }
+        &__btn {
+            width: 170px;
+            height: 43px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
