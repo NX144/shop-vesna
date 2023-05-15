@@ -48,9 +48,15 @@
 @import "./blocks/_navbar-mobile";
 @import "./blocks/_media";
 @import "./media/_media-requisites";
-@import "./media/media.contact";
-@import "./media/media-make-order";
-@import "./media/media-rules";
+@import "./media/_media-contact";
+@import "./media/_media-make-order";
+@import "./media/_media-rules";
+@import "./media/_media-wholesalers";
+@import "./media/_media-advantages-buying";
+@import "./media/_media-contact-section";
+@import "./media/_media-form-section";
+@import "./media/_media-payments";
+
 
 * {
     padding: 0;
