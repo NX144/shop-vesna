@@ -1,0 +1,147 @@
+@media(max-width: 1445px) {
+    .requisites {
+        .container-60 {
+            width: 90% !important;
+        }
+    }
+}   
+
+@media(max-width: 991px) {
+    .catalog-page {
+        &__title {
+            font-size: 28px;
+        }
+    }
+    .requisites {
+        &__block {
+            &_item {
+                &-text {
+                    font-size: 13px;
+                }
+                &-text2 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .catalog-page {
+        &__title {
+            font-size: 28px;
+        }
+    }
+    .requisites {
+        &__block {
+            &_item {
+                &-text {
+                    font-size: 13px;
+                }
+                &-text2 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .catalog-page {
+        &__title {
+            font-size: 23px;
+        }
+    }
+    .requisites {
+        padding: 10px 0 40px;
+        &__block {
+            margin-top: 20px;
+            &_item {
+                display: flex;
+                flex-direction: column;
+                &-text {
+                    font-size: 15px;
+                    margin-top: 20px;
+                }
+                &-text2 {
+                    font-size: 16px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .catalog-page {
+        &__list {
+            &_item {
+                &-photo {
+                    &-img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 22px;
+        }
+    }
+    .requisites {
+         padding: 0px 0 80px 0;
+        .requisites {
+            &__block {
+                display: flex;
+                flex-direction: column;
+                &_item {
+                    display: flex;
+                    flex-direction: column;
+                    &-text {
+                        font-size: 12px;
+                        margin-top: 35px;
+                    }
+                    &-text2 {
+                        font-size: 12px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .catalog-page {
+        &__list {
+            &_item {
+                a {
+                    font-size: 15px;
+                }
+                &-photo {
+                    &-img {
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 17px;
+        }
+           .requisites {
+        padding: 0px 0 80px 0;
+        &__block {
+            &_item {
+                &-text {
+                    font-size: 12px;
+                }
+                &-text2 {
+                    font-size: 9px;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+    }
+}

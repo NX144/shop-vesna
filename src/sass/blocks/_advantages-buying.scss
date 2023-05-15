@@ -14,13 +14,13 @@
         &_wrapper {   
           display: flex;
           justify-content: space-between;
+          margin-top: 60px;
           &-item {
             display: flex;
-            margin-top: 60px;
             justify-content: space-between;
             flex-direction: column;
             align-items: center;
-            width: 30%;
+            width: 31%;
             &-descr {
                 font-weight: 800;
                 font-size: 21px;

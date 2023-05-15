@@ -14,7 +14,7 @@
         color: $main-text;
     }
     &__wrap {
-        width: 55%;
+        width: max-content;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
