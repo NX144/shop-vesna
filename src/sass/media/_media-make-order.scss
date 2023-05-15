@@ -1,0 +1,154 @@
+@media(max-width: 1200px) {
+    .make-order {
+        &__block {
+            &_item {
+                &_photo {
+                    &-img1 {
+                        width: 600px;
+                        height: 200px;
+                    }
+                    &-img2 {
+                        width: 645px;
+                        height: 153px;
+                    }
+                    &-img3 {
+                        width: 328px;
+                        height: 237px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width: 768px) {
+    .make-order {
+        &__block {
+            &_item {
+                &_photo {
+                    &-img1 {
+                        width: 394px;
+                        height: 167px;
+                    }
+                    &-img2 {
+                        width: 450px;
+                        height: 127px;
+                    }
+                    &-img3 {
+                        width: 400px;
+                    }
+                }
+                &-text {
+                    font-size: 16px;
+                }
+                &-text2 {
+                    font-size: 16px;
+                }
+                &-text3 {
+                    font-size: 16px;
+                }
+                &-text4 {
+                    font-size: 16px;
+                }
+                &-text5 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .make-order {
+        &__block {
+            &_item {
+                &_photo {
+                    &-img1 {
+                        width: 200px;
+                    }
+                    &-img2 {
+                        width: 250px;
+                    }
+                    &-img3 {
+                        width: 322px;
+                        height: 256px;
+                    }
+                    &-img4 {
+                        width: 239px;
+                        height: 378px;
+                    }
+                    &-img5 {
+                        width: 315px;
+                        height: 89px;
+                    }
+                }
+                &-text {
+                    font-size: 18px;
+                }
+                &-text2 {
+                    font-size: 18px;
+                }
+                &-text3 {
+                    font-size: 18px;
+                }
+                &-text4 {
+                    font-size: 18px;
+                }
+                &-text5 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 480px) {
+    .make-order {
+        &__block {
+            &_item {
+                &_photo {
+                    &-img1 {
+                        width: 172px;
+                        height: 200px;
+                    }
+                    &-img2 {
+                        width: 288px;
+                        height: 76px;
+                    }
+                    &-img3 {
+                        width: 236px;
+                        height: 171px;
+                    }
+                    &-img4 {
+                        width: 168px;
+                        height: 271px;
+                    }
+                    &-img5 {
+                        width: 265px;
+                        height: 53px;
+                    }
+                }
+                &-text {
+                    font-size: 16px;
+                }
+                &-text2 {
+                    font-size: 16px;
+                }
+                &-text3 {
+                    font-size: 16px;
+                }
+                &-text4 {
+                    font-size: 16px;
+                }
+                &-text5 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
