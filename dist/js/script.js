@@ -29606,6 +29606,22 @@ $('.popular__wrapper').slick({
       infinite: true,
       dots: true
     }
+  }, {
+    breakpoint: 640,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
+    }
+  }, {
+    breakpoint: 425,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
+    }
   }]
 });
 $('.about__block-item').slick({
@@ -29681,6 +29697,15 @@ headerHumburger.addEventListener('click', () => {
 headerMenuClose.addEventListener('click', () => {
   headerMenu.classList.toggle("header-menu-active");
 });
+
+// Адаптив для sales
+
+if (window.innerWidth <= 1835) {
+  let salesBlocks = document.querySelectorAll(".sales__block");
+  if (salesBlocks.length > 0) {
+    salesBlocks.forEach(item => item.classList.contains("sales__block-50") ? item.classList.remove("sales__block-50") : null);
+  }
+}
 
 // function expandElement(elem, collapseClass) {
 //     // debugger;
