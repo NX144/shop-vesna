@@ -78,29 +78,29 @@ if(owlSliders.length > 0) {
             0: {
                 items: 1,
                 nav: false,
-                dots: true
+                dots: true,
             },
             375: {
                 items: 2,
                 nav: false,
-                dots: true
+                dots: true,
             },
             425: {
                 items: 2,
                 nav: false,
-                dots: true
+                dots: true,
             },
             640: {
-                items: 3
+                items: 3,
             },
             768: {
-                items: 4
+                items: 4,
             },
             1200: {
-                items: 5
+                items: 5,
             },
             1645: {
-                items: 5
+                items: 5,
             }
         }
     })
