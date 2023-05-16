@@ -35,8 +35,8 @@
             border-radius: 15px;
             &-img {
                 margin: 0 auto;
-                width: 258px;
-                height: 295px;
+                width: 100%;
+                height: auto;
                 border-radius: 15px;
                 img {
                     width: inherit;
@@ -87,7 +87,7 @@
             width: 95%;
             margin: 0 auto;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 21px;
             color: #2F3035;
             margin-top: 8px;
@@ -265,4 +265,152 @@
 
 .mt-35{
     margin-top: 35px;
+}
+
+// .swiper {
+//     padding: 0 40px 0 25px;
+// }
+
+// .swiper-button-next, .swiper-button-prev {
+//     top: 35%;
+//     color: $main-text;
+//     position: absolute;
+//     z-index: 999999;
+// }
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-prev {
+    left: -2%;
+    top: 30%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.owl-next {
+    right: -2%;
+    top: 30%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+
+.owl-prev, .owl-next {
+    span {
+        width: 20px;
+        display: block;
+        font-size: 38px;
+        &:hover {
+            border-radius: 15px;
+            background: $main-accent;
+        }
+    }
+}
+
+
+@media (max-width: 1550px) {
+    .popular {
+        &__item {
+            &-text {
+                font-size: 16px;
+                margin-top: 6px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .owl-prev {
+        left: -4%;
+    }
+    .owl-next {
+        right: -4%;
+    }
+}
+@media (max-width: 1250px) {
+    .popular {
+        &__item {
+            &-text {
+                font-size: 14px;
+                margin-top: 3px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .popular {
+        &__item {
+            &-text {
+                width: 100%;
+                font-size: 13px;
+                margin-top: 0px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 15px;
+                    line-height: 19px;
+                    span {
+                        font-size: 12px;
+                        margin-left: 1px;
+                    }
+                }
+                &-btn {
+                    margin-left: 5px;
+                }
+            }
+            &_photo {
+                &::after {
+                    font-size: 16px;
+                    line-height: 20px;
+                    width: 90%;
+                    height: 52px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .popular {
+        &__item {
+            padding-bottom: 0;
+            &-text {
+                font-size: 14px;
+            }
+            &_descr {
+                width: 100%;
+                &-price {
+                    font-size: 17px;
+                    line-height: 19px;
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+            &_photo {
+                &::after {
+                    display: none;
+                    overflow: hidden;
+                }
+                &:hover {
+                    &::after {
+                        display: none;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,9 +1,9 @@
 .checkout {
     padding: 45px 0 0 0;
     &__wrapper {
-        padding: 0 20px;
         display: flex;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: space-between;
     }
     &__item {
         margin-top: 70px;
@@ -64,9 +64,7 @@
             }
         }
         &-last {
-            margin-left: 60px;
             &_title {
-                
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 23px;

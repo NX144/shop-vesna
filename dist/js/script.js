@@ -29574,55 +29574,98 @@ $('.main-slider__block').slick({
   prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>'
 });
-$('.popular__wrapper').slick({
+
+// $('.popular__wrapper').slick({
+//     dots: false,
+//     prevArrow: '<button type="button" class="slick-prev"><img src="../img/popular-products/prevArrow.png"></button>',
+//     nextArrow: '<button type="button" class="slick-next"><img src="../img/popular-products/nextArrow.png"></button>',
+//     infinite: false,
+//     speed: 300,
+//     slidesToShow: 5,
+//     slidesToScroll: 1,
+//     responsive: [
+//         {
+//             breakpoint: 1780,
+//             settings: {
+//                 slidesToShow: 4,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//         {
+//             breakpoint: 1490,
+//             settings: {
+//                 slidesToShow: 4,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//         {
+//             breakpoint: 756,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//         {
+//             breakpoint: 640,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//         {
+//             breakpoint: 425,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 dots: true
+//             }
+//         },
+//     ]
+// });
+
+$('.owl-carousel').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: true,
   dots: false,
-  prevArrow: '<button type="button" class="slick-prev"><img src="../img/popular-products/prevArrow.png"></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="../img/popular-products/nextArrow.png"></button>',
-  infinite: false,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  responsive: [{
-    breakpoint: 1780,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      infinite: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
       dots: true
-    }
-  }, {
-    breakpoint: 1490,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      infinite: true,
+    },
+    375: {
+      items: 2,
+      nav: false,
       dots: true
-    }
-  }, {
-    breakpoint: 756,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      infinite: true,
+    },
+    425: {
+      items: 2,
+      nav: false,
       dots: true
+    },
+    640: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    1200: {
+      items: 5
+    },
+    1645: {
+      items: 5
     }
-  }, {
-    breakpoint: 640,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      infinite: true,
-      dots: true
-    }
-  }, {
-    breakpoint: 425,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      dots: true
-    }
-  }]
+  }
 });
 $('.about__block-item').slick({
   dots: true,
