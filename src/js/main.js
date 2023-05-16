@@ -66,41 +66,46 @@ $('.main-slider__block').slick({
 //     ]
 // });
 
-$('.owl-carousel').owlCarousel({
-    loop: false,
-    margin: 10,
-    nav: true,
-    dots: false,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false,
-            dots: true
-        },
-        375: {
-            items: 2,
-            nav: false,
-            dots: true
-        },
-        425: {
-            items: 2,
-            nav: false,
-            dots: true
-        },
-        640: {
-            items: 3
-        },
-        768: {
-            items: 4
-        },
-        1200: {
-            items: 5
-        },
-        1645: {
-            items: 5
+let owlSliders = document.querySelectorAll(".owl-carousel");
+
+if(owlSliders.length > 0) {
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            375: {
+                items: 2,
+                nav: false,
+                dots: true
+            },
+            425: {
+                items: 2,
+                nav: false,
+                dots: true
+            },
+            640: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            },
+            1645: {
+                items: 5
+            }
         }
-    }
-})
+    })
+}
+
 
 
 $('.about__block-item').slick({
