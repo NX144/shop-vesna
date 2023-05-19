@@ -10,6 +10,7 @@
     z-index: 15;
     transition: .4s all ease-in-out;
     position: fixed;
+    overflow-y: scroll;
     &__container {
         width: 60%;
         margin: 0 auto;
@@ -64,7 +65,7 @@
     }
     &__menu {
         position: absolute;
-        height: 100vh;
+        height: 100%;
         visibility: hidden;
         opacity: 0;
         width: 18%;
@@ -119,7 +120,7 @@
 }
 
 .overlay-catalog-active {
-    height: 100vh;
+    height: 100%;
     visibility: visible;
     opacity: 1;
     .overlay-catalog__close {
@@ -132,7 +133,7 @@
         opacity: 1;
     }
     .overlay-catalog__menu {
-        height: 100vh;
+        height: 100%;
         visibility: visible;
         opacity: 1;
     }
