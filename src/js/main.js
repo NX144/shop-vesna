@@ -285,3 +285,17 @@ footerItem.forEach(item => {
             // expandElement(content, 'footer__item-links-active');
     })
 })
+
+
+let filterBtnItem = document.querySelector(".catalog-page__sort_filt"),
+    filerModal = document.querySelector(".catalog-page__filter"),
+    filterClose = document.querySelector(".catalog-page__close");
+    
+
+
+filterBtnItem.addEventListener("click", () => {
+    filerModal.classList.add("catalog-page-active");
+})
+filterClose.addEventListener("click", () => {
+    filerModal.classList.remove("catalog-page-active");
+})

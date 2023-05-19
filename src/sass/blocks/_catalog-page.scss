@@ -3,6 +3,9 @@
     height: auto;
     margin-top: 45px;
     position: relative;
+    &__close {
+        display: none;
+    }
     &__list {
         display: flex;
         list-style-type: none;
@@ -306,6 +309,9 @@
         display: flex;
         justify-content: end;
         align-items: center;
+        &_filt {
+            display: none;
+        }
         &_select {
             width: 190px;
             height: 33px;
@@ -484,6 +490,42 @@
             margin-top: 20px;
             justify-content: flex-start;
         }
+        &__block2 {
+            &__item2 {
+                height: 200px;
+                padding: 16px;
+                padding-bottom: 20px;
+                &-text {
+                    width: 50%;
+                }
+                &-buttons {
+                    width: 28%;
+                    margin-top: 15px;
+                    &-wrap {
+                        &-red {
+                            font-size: 25px;
+                        }
+                        &-subject {
+                            font-size: 15px;
+                            margin-top: 11px;
+                            &::after {
+                                top: 42%;
+                            }
+                        }
+                    }
+                    &-wrapper {
+                        &-heart {
+                            width: 42px;
+                            height: 36px;
+                        }
+                        &-basket {
+                            width: 75%;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width: 991px) {
@@ -500,6 +542,61 @@
         }
         &__sort {
             padding-left: 25%;
+        }
+        &__block2 {
+            &__item2 {
+                height: 183px;
+                padding: 10px;
+                padding-bottom: 20px;
+                &-text {
+                    width: 50%;
+                    &-title {
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 18px;
+                        margin-top: 10px;
+                    }
+                }
+                &-row {
+                    flex-direction: column-reverse;
+                }
+                &-rating-descr {
+                    &-title {
+                        font-size: 14px;
+                    }
+                    &-syllka {
+                        font-size: 13px;
+                    }
+                }
+                &-buttons {
+                    width: 28%;
+                    margin-top: 15px;
+                    &-text {
+                        width: max-content;
+                        height: 36px;
+                        font-size: 22px;
+                    }
+                    &-wrap {
+                        width: max-content;
+                        &-red {
+                            width: max-content;
+                            font-size: 22px;
+                        }
+                        &-subject {
+                            font-size: 14px;
+                        }
+                    }
+                    &-wrapper {
+                        &-basket {
+                            width: 70%;
+                            height: 32px;
+                            span {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -537,11 +634,27 @@
             width: 100%;
         }
         &__item {
-            width: 46%!important;
+            width: 48%!important;
             margin-right: 4%;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
         }
         &__sort {
             padding-left: 0;
+            justify-content: space-between;
+            &_filt {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        &__close {
+            display: block;
+            position: absolute;
+            top: 3%;
+            left: 5%;
+            cursor: pointer;
+            font-size: 36px;
         }
     }
     .catalog-page__filter {
@@ -585,6 +698,20 @@
         }
         &_reset {
             font-size: 16px;
+        }
+    }
+}
+.catalog-page-active {
+    right: 0;
+}
+
+@media (max-width: 380px) {
+    .catalog-page__filter {
+       padding: 80px 8px 30px;
+    }
+    .popular__item_descr-price-fz {
+        span {
+            display: block;
         }
     }
 }
