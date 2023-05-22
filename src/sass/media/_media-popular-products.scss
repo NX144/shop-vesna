@@ -1,0 +1,101 @@
+@media (max-width: 1550px) {
+    .popular {
+        &__item {
+            &-text {
+                font-size: 16px;
+                margin-top: 6px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .owl-prev {
+        left: -4%;
+    }
+    .owl-next {
+        right: -4%;
+    }
+}
+@media (max-width: 1250px) {
+    .popular {
+        &__item {
+            &-text {
+                font-size: 14px;
+                margin-top: 3px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .popular {
+        &__item {
+            &-text {
+                width: 100%;
+                font-size: 13px;
+                margin-top: 0px;
+            }
+            &_descr {
+                &-price {
+                    font-size: 15px;
+                    line-height: 19px;
+                    span {
+                        font-size: 12px;
+                        margin-left: 1px;
+                    }
+                }
+                &-btn {
+                    margin-left: 5px;
+                }
+            }
+            &_photo {
+                &::after {
+                    font-size: 16px;
+                    line-height: 20px;
+                    width: 90%;
+                    height: 52px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .popular {
+        &__item {
+            padding-bottom: 0;
+            &-text {
+                font-size: 14px;
+            }
+            &_descr {
+                width: 100%;
+                &-price {
+                    font-size: 17px;
+                    line-height: 19px;
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+            &_photo {
+                &::after {
+                    display: none;
+                    overflow: hidden;
+                }
+                &:hover {
+                    &::after {
+                        display: none;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

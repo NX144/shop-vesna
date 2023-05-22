@@ -1,11 +1,14 @@
 # Интернет-Магазин ТПК-ВЕСНА
 
 Сделай себе клонирование проекта
-- git clone https://github.com/NX144/shop-vesna.git
+- git clone https://github.com/NX144/shop-vesna.git (потом переходишь в эту папку)
 
 Установи локальные данные
 - git config --local user.name "имя"
 - git config --local user.email почта
+
+Установи модули
+- npm i
 
 Сделай пулл(запускай его всегда при запуске проекта или его обновлении на сервере)
 - git pull
