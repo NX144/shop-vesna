@@ -292,10 +292,12 @@ let filterBtnItem = document.querySelector(".catalog-page__sort_filt"),
     filterClose = document.querySelector(".catalog-page__close");
     
 
+if(filterBtnItem && filerModal && filterClose) {
+    filterBtnItem.addEventListener("click", () => {
+        filerModal.classList.add("catalog-page-active");
+    })
+    filterClose.addEventListener("click", () => {
+        filerModal.classList.remove("catalog-page-active");
+    })
+}
 
-filterBtnItem.addEventListener("click", () => {
-    filerModal.classList.add("catalog-page-active");
-})
-filterClose.addEventListener("click", () => {
-    filerModal.classList.remove("catalog-page-active");
-})
