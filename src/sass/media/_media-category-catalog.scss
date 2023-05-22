@@ -39,7 +39,7 @@
                     width: 100%;
                     left: 0;
                     text-align: center;
-                    font-size: 18px;
+                    font-size: 17px;
                 }
             }
         }
@@ -47,12 +47,82 @@
 }
 @media (max-width: 991px) {
     .category-catalog {
+        &__menu {
+            width: 32%;
+        }
         &__block {
+            width: 64%;
             &_item {
-                min-height: 155px;
-                width: 43%;
+                min-height: 130px;
+                width: 45%;
                 &-text {
                     font-size: 19px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .category-catalog {
+        &__menu {
+            width: 40%;
+            .overlay-catalog__menu_item {
+                width: 80%;
+            }
+        }
+        &__block {
+            width: 36%;
+            &_item {
+                min-height: 140px;
+                width: 100%;
+                &-text {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .requisites__block {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .category-catalog {
+        &__menu {
+            width: 45%;
+            .overlay-catalog__menu_item {
+                width: 100%;
+            }
+        }
+        &__block {
+            width: 51%;
+            &_item {
+                min-height: 140px;
+                width: 100%;
+                &-text {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .requisites__block {
+        width: 100%;
+    }
+    .category-catalog {
+        &__menu {
+            .overlay-catalog__menu_item {
+                font-size: 16px;
+            }
+        }
+        &__block {
+            width: 51%;
+            &_item {
+                min-height: 100px;
+                width: 100%;
+                &-text {
+                    font-size: 14px;
                 }
             }
         }
