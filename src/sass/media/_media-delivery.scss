@@ -1,0 +1,201 @@
+@media (max-width: 1712px) {
+    .delivery {
+        .container-60 {
+            width: 72% !important;
+        }
+    }
+}
+@media (max-width: 1445px) {
+    .delivery {
+        .container-60 {
+            width: 84% !important;
+        }
+    }
+}
+@media (max-width: 1228px) {
+    .delivery {
+        .container-60 {
+            width: 95% !important;
+        }
+    }
+}
+@media (max-width: 1168px) {
+    .delivery {
+        &__block {
+            &_title {
+                width: 62%;
+            }
+            &_descr {
+                font-size: 17px;
+                line-height: 17px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .delivery {
+        &__img {
+            width: 167px;
+        }
+        &__block {
+            &_title {
+                width: 59%;
+                font-size: 36px;
+                line-height: 36px;
+            }
+            &_bottom {
+                &-right {
+                    transform: translateY(-8%);
+                }
+            }
+            &_img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 905px) {
+    .delivery {
+        &__wrapper {
+            padding: 42px 30px;
+        }
+        &__block {
+            &_wrap {
+                margin-right: 10px;
+                width: 33%;
+            }
+            &_title {
+                width: 62%;
+            }
+            &_descr {
+                font-size: 14px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+            }
+            &_bottom {
+                &-left {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 858px) {
+    .delivery {
+        &__img {
+            width: 149px;
+        }
+        &__block {
+            width: 100%;
+            &_title {
+                width: 100%;
+                font-size: 36px;
+                line-height: 40px;
+                text-align: center;
+            }
+            &_bottom {
+                align-items: center;
+                width: max-content;
+                margin: 0 auto;
+                margin-top: 40px;
+                &-left {
+                    margin-right: 30px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &-right {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    height: 180px;
+                    position: unset;
+                }
+            }
+            &_wrap {
+                min-height: unset;
+                display: flex;
+                align-items: center;
+                max-width: 191px;
+                width: 191px;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+            &_img {
+                width: 45px;
+                display: flex;
+                justify-content: center;
+            }
+            &_descr {
+                width: 71%;
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .delivery {
+        &__img {
+            width: 137px;
+        }
+        &__block {
+            &_title {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &_bottom {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .delivery {
+        &__img {
+            width: 116px;
+        }
+        &__block {
+            &_title {
+                font-size: 19px;
+                line-height: 19px;
+            }
+            &_bottom {
+                margin-top: 10px;
+                &-left {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .delivery {
+        &__wrapper {
+            padding: 25px 20px;
+        }
+        &__img {
+            width: 70px;
+        }
+        &__block {
+            &_img {
+                width: 20px;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                }
+            }
+            &_wrap {
+                justify-content: unset;
+            }
+            &_bottom {
+                &-right {
+                    position: absolute;
+                    top: 45%;
+                }
+                &-left {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
