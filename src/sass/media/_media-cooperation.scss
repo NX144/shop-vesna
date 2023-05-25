@@ -1,0 +1,162 @@
+
+@media(max-width: 1700px) {
+    .cooperation{
+        .container-60 {
+            width: 90% !important;
+        }
+        &__title {
+            width: 400px;
+        }
+    }
+}
+
+
+@media(max-width: 1610px) {
+    .cooperation{
+        .container-60 {
+            width: 90% !important;
+        }
+        &__title {
+            width: 400px;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .cooperation {
+        .container-60 {
+            width: 90% !important;
+        }
+        &__img {
+            &_photo {
+                width: 170px;
+                height: 170px;
+            }
+        }
+        &__title {
+            font-size: 38px;
+            width: 400px;
+        }
+        &__descr{
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .cooperation {
+        &__block {
+            padding: 42px 25px 57px 25px;
+        }
+        .container-60 {
+            width: 90% !important;
+        }
+        &__img {
+            &_photo {
+                width: 160px;
+                height: 160px;
+            }
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 40px;
+            width: 300px;
+        }
+        &__descr{
+            font-size: 17px;
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .cooperation {
+        &__block {
+            padding: 42px 25px 57px 25px;
+        }
+        .container-60 {
+            width: 90% !important;
+        }
+        &__img {
+            &_photo {
+                width: 140px;
+                height: 140px;
+            }
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            width: 300px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media(max-width: 640px) {
+    .cooperation {
+        &__block {
+            padding: 42px 25px 57px 25px;
+        }
+        .container-60 {
+            width: 90% !important;
+        }
+        &__img {
+            &_photo {
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 25px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &__descr{
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+@media(max-width: 480px) {
+    .cooperation {
+        &__block {
+            padding: 25px 16px 30px;
+            &::before {
+                top: 1px;
+                left: 1px;
+            }
+        }
+        .container-60 {
+            width: 90% !important;
+        }
+        &__img {
+            &_photo {
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &__descr{
+            font-size: 13px;
+            width: 100%;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+}
+
+
+
+
+
+
