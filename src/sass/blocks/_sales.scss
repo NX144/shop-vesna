@@ -55,6 +55,10 @@
     &__btn {
         width: 216px;
         height: 45px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         transition: .3s all;
         border: 2px solid transparent;
@@ -62,6 +66,7 @@
         font-size: 18px;
         border-radius: 8px;
         font-weight: 500;
+        background-color: #fff;
         &:hover {
             background-color: transparent;
             border-color: #fff;

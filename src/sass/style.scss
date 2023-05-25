@@ -47,6 +47,7 @@
 @import "./blocks/_header-menu";
 @import "./blocks/_navbar-mobile";
 @import "./blocks/_media";
+
 @import "./media/_media-requisites";
 @import "./media/_media-main";
 @import "./media/_media-sales";
@@ -62,6 +63,17 @@
 @import "./media/provider";
 @import "./media/media-cooperation";
 @import "./media/media-advantages-company";
+@import "./media/_media-category";
+@import "./media/_media-popular-products";
+@import "./media/_media-overlay-catalog";
+@import "./media/_media-catalog-item";
+@import "./media/_media-category-catalog";
+@import "./media/_media-delivery";
+@import "./media/_media-terms";
+@import "./media/_media-about";
+@import "./media/_media-about-wrapper";
+@import "./media/_media-advantages";
+@import "./media/_media-feedback-clip";
 
 
 * {

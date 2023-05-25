@@ -32,11 +32,12 @@
         }
 
         &_photo {
+            text-decoration: none;
             border-radius: 15px;
             &-img {
                 margin: 0 auto;
-                width: 258px;
-                height: 295px;
+                width: 100%;
+                height: auto;
                 border-radius: 15px;
                 img {
                     width: inherit;
@@ -87,7 +88,7 @@
             width: 95%;
             margin: 0 auto;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 21px;
             color: #2F3035;
             margin-top: 8px;
@@ -265,4 +266,49 @@
 
 .mt-35{
     margin-top: 35px;
+}
+
+// .swiper {
+//     padding: 0 40px 0 25px;
+// }
+
+// .swiper-button-next, .swiper-button-prev {
+//     top: 35%;
+//     color: $main-text;
+//     position: absolute;
+//     z-index: 999999;
+// }
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-prev {
+    left: -2%;
+    top: 30%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.owl-next {
+    right: -2%;
+    top: 30%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+
+.owl-prev, .owl-next {
+    span {
+        width: 20px;
+        display: block;
+        font-size: 38px;
+        &:hover {
+            border-radius: 15px;
+            background: $main-accent;
+        }
+    }
 }

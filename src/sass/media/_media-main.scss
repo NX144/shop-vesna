@@ -58,7 +58,28 @@
     .main-slider {
         &__block {
             &_item {
-                height: 200px;
+                height: 180px;
+                margin-top: 30px;
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .slick-dots {
+            bottom: -30px;
+            li {
+                margin: 0 1px;
+                button {
+                    &::before {
+                        content: '';
+                        width: 13px;
+                        height: 13px;
+                        border: 1px solid $main-accent;
+                        border-radius: 100%;
+                        color: #FFFFFF;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
