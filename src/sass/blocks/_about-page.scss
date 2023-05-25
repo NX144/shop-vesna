@@ -79,18 +79,21 @@
             height: 380px;
         }
     }
-    .slick-dots {
-        list-style-type: none;
-        bottom: 8px;
-        li {
-            button {
-                &::before {
-                    content: '';
-                    width: 11px;
-                    height: 11px;
-                    border: 2px solid #FFFFFF;
-                    border-radius: 100%;
-                    color: #FFFFFF; 
+    &__wrapper {
+        .slick-dots {
+            list-style-type: none;
+            bottom: -18px;
+            li {
+                button {
+                    &::before {
+                        content: '';
+                        width: 11px;
+                        height: 11px;
+                        border: 2px solid $main-accent;
+                        border-radius: 100%;
+                        color: #FFFFFF; 
+
+                    }
                 }
             }
         }

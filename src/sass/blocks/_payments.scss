@@ -43,12 +43,16 @@
         align-items: center;
         margin-top: 26px;
         &_wrap {
-            height: 60px;
+            height: auto;
             display: flex;
             align-items: center;
             margin-right: 15px;
             &:last-child {
                 margin-right: 0;
+            }
+            img {
+                width: max-content;
+                height: auto;
             }
         }
     }

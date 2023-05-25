@@ -35,11 +35,16 @@
         min-height: 628px;
         padding: 26px 0 52px 0;
         &__title {
+            
             font-size: 23px;
-            width: 400px;
+            text-align: center;
+            width: 100%;
         }
         &__descr {
-            font-size: 17px;
+            font-size: 15px;
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 45px;
         }
         .container-60 {
             width: 95%;
@@ -50,6 +55,13 @@
         height: 46px;
         font-size: 16px;
     }
+    .provider__btn {
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -59,12 +71,11 @@
         min-height: 557px;
         padding: 22px 0 41px 0;
         &__title {
-            font-size: 17px;
-            width: 300px;
+            margin-top: 60px;
+            font-size: 21px;
         }
         &__descr {
             font-size: 15px;
-            width: 329px;
         }
         .container-60 {
             width: 95%;
@@ -84,12 +95,11 @@
         min-height: 495px;
         padding: 22px 0 41px 0;
         &__title {
-            font-size: 12px;
-            width: 200px;
+            font-size: 16px;
         }
         &__descr {
-            font-size: 11px;
-            line-height: 137%;
+            font-size: 12px;
+            line-height: 132%;
             width: 88%;
         }
         .container-60 {
