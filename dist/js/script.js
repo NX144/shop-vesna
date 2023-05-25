@@ -29566,6 +29566,19 @@ module.exports = g;
 const {
   setTimeout
 } = __webpack_require__(/*! core-js */ "./node_modules/core-js/index.js");
+$('.owl-carousel2').slick({
+  dots: true,
+  slidesToShow: 1,
+  padding: "50px",
+  prevArrow: '<button type="button" class="slick-prev"><img src="../icons/header-component/arrow-left.png" alt="prev"></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="../icons/header-component/arrow-right.png" alt="next"></button>'
+});
+let sliderWidth1 = document.querySelector(".slider-width1"),
+  sliderWidth2 = document.querySelector(".slider-width2");
+if (sliderWidth1 && sliderWidth2 && window.innerWidth <= 991) {
+  sliderWidth1.style.display = "none";
+  sliderWidth2.style.display = "block";
+}
 $('.main-slider__block').slick({
   dots: true,
   infinite: true,
