@@ -70,7 +70,7 @@
                 line-height: 18px;
                 text-align: center;
                 display: flex;
-                padding-top: 16px;
+                align-items: center;
                 justify-content: center;
             }
         }
@@ -137,4 +137,15 @@
             }
         }
     }
+}
+
+.slider-width2 {
+    display: none;
+}
+
+.mobile-descr-2 {
+    display: none;
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
