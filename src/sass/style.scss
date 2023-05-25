@@ -71,6 +71,7 @@
 @import "./media/_media-about-wrapper";
 @import "./media/_media-advantages";
 @import "./media/_media-feedback-clip";
+@import "./media/_media-cart.scss";
 
 
 * {
@@ -95,4 +96,8 @@ a {
     width: 60%;
     margin: 0 auto;
     position: relative;
+}
+
+.overflow-yh {
+    overflow-y: hidden;
 }
