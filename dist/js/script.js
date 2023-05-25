@@ -29823,6 +29823,17 @@ if (filterBtnItem && filerModal && filterClose) {
     filerModal.classList.remove("catalog-page-active");
   });
 }
+const ccTimes = document.querySelector('.category-catalog__menu_wrap-times'),
+  ccMenu = document.querySelector('.category-catalog__menu_wrap'),
+  ccBtn = document.querySelector('.category-catalog__btn-cat');
+ccBtn.addEventListener('click', () => {
+  ccMenu.classList.add('category-catalog__menu_wrap-active');
+  document.body.classList.add('overflow-yh');
+});
+ccTimes.addEventListener('click', () => {
+  ccMenu.classList.remove('category-catalog__menu_wrap-active');
+  document.body.classList.remove('overflow-yh');
+});
 
 /***/ })
 
