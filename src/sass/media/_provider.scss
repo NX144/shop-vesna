@@ -1,0 +1,114 @@
+@media(max-width: 1200px) {
+    .provider {
+        background-position-x: left;
+        min-height: 667px;
+        padding: 37px 0 94px 0;
+        &__title {
+            font-size: 40px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .provider {
+        background-position-x: left;
+        min-height: 667px;
+        padding: 37px 0 94px 0;
+        &__title {
+            font-size: 30px;
+            width: 88%;
+         
+        }
+        &__descr {
+            font-size: 17px;
+        }
+        .container-60 {
+            width: 83%;
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .provider {
+        background-position: 20%;
+        min-height: 628px;
+        padding: 26px 0 52px 0;
+        &__title {
+            
+            font-size: 23px;
+            text-align: center;
+            width: 100%;
+        }
+        &__descr {
+            font-size: 15px;
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+        .container-60 {
+            width: 95%;
+        }
+    }
+    .request-btn {
+        width: 220px;
+        height: 46px;
+        font-size: 16px;
+    }
+    .provider__btn {
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 640px) {
+    .provider {
+        background-position: 20%;
+        min-height: 557px;
+        padding: 22px 0 41px 0;
+        &__title {
+            margin-top: 60px;
+            font-size: 21px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        .container-60 {
+            width: 95%;
+        }
+    }
+    .request-btn {
+        width: 180px;
+        height: 38px;
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width: 480px) {
+    .provider {
+        background-position: 20%;
+        min-height: 495px;
+        padding: 22px 0 41px 0;
+        &__title {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 132%;
+            width: 88%;
+        }
+        .container-60 {
+            width: 94%;
+        }
+    }
+    .request-btn {
+        width: 165px;
+        height: 32px;
+        font-size: 11px;
+    }
+}
