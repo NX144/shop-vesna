@@ -76,10 +76,27 @@
     }
     
     .reviews {
+        &__rating {
+            width: 38%;
+            &_btn {
+                font-size: 17px;
+            }
+            &_count {
+                font-size: 25px;
+            }
+            .info-catalog__rating_title {
+                margin: 0;
+                margin-left: 5px;
+                font-size: 12px;
+            }
+        }
         &__images {
+            margin-top: 19px;
+            flex-wrap: wrap;
             img {
                 width: 100px !important;
                 height: 75px !important;
+                margin-top: 14px;
             }
         }
         &__descr {
