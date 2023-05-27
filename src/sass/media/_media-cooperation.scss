@@ -8,6 +8,11 @@
             width: 400px;
         }
     }
+    .advantages-company {
+        .container-60 {
+            width: 70% !important;
+        }
+    }
 }
 
 
@@ -20,7 +25,14 @@
             width: 400px;
         }
     }
+    
+    .advantages-company {
+        .container-60 {
+            width: 85% !important;
+        }
+    }
 }
+
 
 @media(max-width: 1200px) {
     .cooperation {
