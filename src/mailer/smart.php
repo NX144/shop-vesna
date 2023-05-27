@@ -1,9 +1,22 @@
 <?php 
 
-if(!empty($_POST['name']) && !empty($_POST['email'])) {
+if(
+	!empty($_POST['name']) && 
+	!empty($_POST['surname']) && 
+	!empty($_POST['number']) && 
+	!empty($_POST['email']) && 
+	!empty($_POST['city']) && 
+	!empty($_POST['index']) &&
+	!empty($_POST['address']) 
+
+	) {
 	$name = $_POST['name'];
+	$surname = $_POST['surname'];
+	$number = $_POST['number'];
 	$email = $_POST['email'];
-	$mess = $_POST['mess'];
+	$city = $_POST['city'];
+	$index = $_POST['index'];
+	$address = $_POST['address'];
 	require_once('phpmailer/PHPMailerAutoload.php');
 	$mail = new PHPMailer;
 	$mail->CharSet = 'utf-8';
@@ -32,8 +45,12 @@ if(!empty($_POST['name']) && !empty($_POST['email'])) {
 	$mail->Body    = '
 			Данные пользователя<br> 
 			Имя: ' . $name . ' <br>
-			Почта: ' . $email . '<br>
-			Сообщение: ' . $mess . '<br>';
+			Фамилия: ' . $surname . '<br>
+			Номер телефона: ' . $number . '<br>
+			Почта: ' . $email . ' <br>
+			Город/населённый пункт: ' . $city . '<br>
+			Почтовый индекс: ' . $index . '<br>
+			Адрес: ' . $address . '<br>';
 
 
 	if(!$mail->send()) {

@@ -1,0 +1,113 @@
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.modal-success {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(#000, .45);
+    z-index: 10000;
+    &__block {
+        position: relative;
+        width: 620px;
+        height: auto;
+        padding: 35px;
+        padding-top: 25px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        text-align: center;
+        background: rgba(41, 41, 41, 0.97);
+        border: 3px solid $main-accent;
+        &-close {
+            width: 31px;
+            padding-left: 3px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 300;
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            transition: all linear .1s;
+            user-select: none;
+            cursor: pointer;
+            &:hover {
+                color: silver;
+            }
+        }
+        &-title {
+            font-size: 32px;
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        &-descr {
+            font-size: 24px;
+            color: #fff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+@media(max-width: 1200px) {
+    .modal-success {
+        &__block {
+            width: 500px;
+            &-title {
+                line-height: 52px;
+                font-size: 27px;
+                margin-top: 15px;
+            }
+            &-descr {
+                line-height: 40px;
+                font-size: 19px;
+            }
+        }
+    }
+}
+@media(max-width: 786px) {
+    .modal-success {
+        &__block {
+            width: 440px;
+            padding: 25px;
+            padding-top: 15px;
+            &-title {
+                line-height: 44px;
+                font-size: 25px;
+                margin-top: 12px;
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+@media(max-width: 576px) {
+    .modal-success {
+        &__block {
+            width: 300px;
+            padding: 19px;
+            padding-top: 10px;
+            &-close {
+                font-size: 39px;
+                padding-left: 9px;
+            }
+            &-title {
+                line-height: 38px;
+                font-size: 18px;
+                margin-top: 8px;
+            }
+            &-descr {
+                font-size: 13px;
+                line-height: 28px;
+            }
+        }
+    }
+}

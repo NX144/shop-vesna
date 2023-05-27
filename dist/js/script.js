@@ -94,90 +94,6 @@
 /***/ (function(module, exports) {
 
 document.addEventListener("DOMContentLoaded", function () {
-  const mainForm = document.querySelector('.form-section__wrap');
-  function postData(form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      // Сам AJAX запрос
-      const request = new XMLHttpRequest();
-      request.open("POST", "./mailer/smart.php");
-      // Не нужно устанавливать заголовки для формата XMLHttpRequest + FormData
-      // request.setRequestHeader("Content-Type", "multipart/form-data; charset=UTF-8");
-      const gtg = new FormData(form);
-      request.send(gtg);
-
-      // Взаимодействие с модальным окном
-      const modalRequest = document.querySelector('#modal-success'),
-        modalRequestInner = document.querySelector('.modal-success__block'),
-        modalClose = document.querySelector('.modal-success__block-close');
-      modalRequest.style.cssText = "transition: .3s all ease-in-out;";
-      let objRequest = {
-        ok: {
-          title: "Благодарю за заявку!",
-          descr: "Скоро с вами свяжется мой менеджер"
-        },
-        bad: {
-          title: "Что-то пошло не так....",
-          descr: "Попробуйте ещё раз или напишите в тех.поддержку!"
-        }
-      };
-      class MessRequest {
-        constructor(message, classObj) {
-          this.message = message;
-          this.classObj = classObj;
-        }
-        render() {
-          modalRequest.classList.remove("hide");
-          document.body.classList.add('overflow-hidden');
-          let requestMessage = document.createElement('div');
-          requestMessage.className = this.classObj;
-          requestMessage.innerHTML = this.message;
-          modalRequestInner.appendChild(requestMessage);
-          // if(modalRequestInner.childNodes[3]) {
-          //     modalRequestInner.childNodes[3].nextSibling.classList.add("title");
-          // }
-          // console.log(modalRequestInner.childNodes[2].nextSibling);
-          // console.dir(modalRequestInner.childNodes[2].nextSibling);
-        }
-      }
-
-      function modalCls() {
-        modalRequest.classList.add('hide');
-        document.body.classList.remove('overflow-hidden');
-        let objText = document.querySelector(".modal-success__block");
-        while (objText.childNodes.length > 2) {
-          objText.removeChild(objText.lastChild);
-        }
-      }
-      modalClose.addEventListener('click', () => {
-        modalCls();
-      });
-      if (modalRequest.classList.contains('hide')) {
-        document.querySelector('.modal-success').addEventListener('click', function () {
-          modalCls();
-        });
-      }
-      request.addEventListener('load', () => {
-        if (request.status === 200 && request.readyState === 4) {
-          new MessRequest(objRequest.ok.title, "modal-success__block-title title").render();
-          new MessRequest(objRequest.ok.descr, "modal-success__block-descr title").render();
-        } else {
-          new MessRequest(objRequest.bad.title, "modal-success__block-title title").render();
-          new MessRequest(objRequest.bad.descr, "modal-success__block-descr title").render();
-        }
-      });
-      document.querySelectorAll("form input").forEach(item => {
-        item.value = "";
-      });
-      document.querySelectorAll("form textarea").forEach(item => {
-        item.value = "";
-      });
-    });
-  }
-  if (mainForm) {
-    postData(mainForm);
-  }
   $('.owl-carousel2').slick({
     dots: true,
     slidesToShow: 1,
@@ -402,6 +318,90 @@ document.addEventListener("DOMContentLoaded", function () {
       ccMenu.classList.remove('category-catalog__menu_wrap-active');
       document.body.classList.remove('overflow-yh');
     });
+  }
+  const mainForm = document.querySelector('.form-section__wrap');
+  function postData(form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Сам AJAX запрос
+      const request = new XMLHttpRequest();
+      request.open("POST", "./mailer/smart.php");
+      // Не нужно устанавливать заголовки для формата XMLHttpRequest + FormData
+      // request.setRequestHeader("Content-Type", "multipart/form-data; charset=UTF-8");
+      const gtg = new FormData(form);
+      request.send(gtg);
+
+      // Взаимодействие с модальным окном
+      const modalRequest = document.querySelector('#modal-success'),
+        modalRequestInner = document.querySelector('.modal-success__block'),
+        modalClose = document.querySelector('.modal-success__block-close');
+      modalRequest.style.cssText = "transition: .3s all ease-in-out;";
+      let objRequest = {
+        ok: {
+          title: "Благодарю за заявку!",
+          descr: "Скоро с вами свяжется мой менеджер"
+        },
+        bad: {
+          title: "Что-то пошло не так....",
+          descr: "Попробуйте ещё раз или напишите в тех.поддержку!"
+        }
+      };
+      class MessRequest {
+        constructor(message, classObj) {
+          this.message = message;
+          this.classObj = classObj;
+        }
+        render() {
+          modalRequest.classList.remove("hide");
+          document.body.classList.add('overflow-hidden');
+          let requestMessage = document.createElement('div');
+          requestMessage.className = this.classObj;
+          requestMessage.innerHTML = this.message;
+          modalRequestInner.appendChild(requestMessage);
+          // if(modalRequestInner.childNodes[3]) {
+          //     modalRequestInner.childNodes[3].nextSibling.classList.add("title");
+          // }
+          // console.log(modalRequestInner.childNodes[2].nextSibling);
+          // console.dir(modalRequestInner.childNodes[2].nextSibling);
+        }
+      }
+
+      function modalCls() {
+        modalRequest.classList.add('hide');
+        document.body.classList.remove('overflow-hidden');
+        let objText = document.querySelector(".modal-success__block");
+        while (objText.childNodes.length > 2) {
+          objText.removeChild(objText.lastChild);
+        }
+      }
+      modalClose.addEventListener('click', () => {
+        modalCls();
+      });
+      if (modalRequest.classList.contains('hide')) {
+        document.querySelector('.modal-success').addEventListener('click', function () {
+          modalCls();
+        });
+      }
+      request.addEventListener('load', () => {
+        if (request.status === 200 && request.readyState === 4) {
+          new MessRequest(objRequest.ok.title, "modal-success__block-title title").render();
+          new MessRequest(objRequest.ok.descr, "modal-success__block-descr title").render();
+        } else {
+          new MessRequest(objRequest.bad.title, "modal-success__block-title title").render();
+          new MessRequest(objRequest.bad.descr, "modal-success__block-descr title").render();
+        }
+      });
+      document.querySelectorAll("form input").forEach(item => {
+        item.value = "";
+      });
+      document.querySelectorAll("form textarea").forEach(item => {
+        item.value = "";
+      });
+    });
+  }
+  if (mainForm) {
+    postData(mainForm);
   }
 });
 
