@@ -250,6 +250,9 @@
     .reviews {
         &__rating {
             width: 75%;
+            &_btn {
+                width: 100% !important;
+            }
         }
         &__add {
             width: 66%;
@@ -351,8 +354,8 @@
         &__rating {
             width: 101%;
             &_btn {
-                font-size: 17px;
-                height: 45px;
+                font-size: 17px !important;
+                height: 45px !important;
             }
         }
         &__date {
@@ -450,7 +453,7 @@
             &-btn {
                 width: 48%;
                 height: 45px;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 16px;
             }
         }
