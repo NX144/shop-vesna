@@ -180,6 +180,14 @@
             border: none;
             cursor: pointer;
             margin-top: 20px;
+            transition: .3s all ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            &:hover {
+                color: $main-accent;
+                border-color: $main-accent;
+                background-color: transparent;
+            }
         }
         &_descr {
             margin-top: 10px;

@@ -15,16 +15,27 @@
         color: #000000;
     }
     &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         margin-top: 60px;
         width: 322px;
         height: 57px;
-        background: $main-accent;
+        background-color: $main-accent;
         border-radius: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 55px;
         text-align: center;
         color: #FFFFFF;
+        transition: .3s all ease;
+        border: 2px solid transparent;
         cursor: pointer;
+        &:hover {
+            color: $main-accent;
+            border-color: $main-accent;
+            background-color: transparent;
+        }
     }
 }

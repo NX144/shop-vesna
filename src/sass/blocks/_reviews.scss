@@ -53,14 +53,19 @@
     &__images {
         display: flex;
         margin-top: 33px;
-        img {
+        a {
             width: 115px;
-            height: 90px;
+            height: 84px;
             margin-right: 14px;
             object-fit: cover;
+            display: block;
             border-radius: 15px;
             &:last-child {
                 margin-right: 0;
+            }
+            img {
+                width: inherit;
+                height: inherit;
             }
         }
     }
@@ -187,6 +192,11 @@
             }
         }
         &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
             width: 100%;
             margin: 0 auto;
             margin-top: 25px;

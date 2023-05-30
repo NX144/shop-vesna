@@ -25,11 +25,14 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "hammerjs": "^2.0.8",
     "sass": "^1.58.0",
-    "swiper": "^9.2.4"
+    "swiper": "^9.2.4",
+    "toastify-js": "^1.12.0"
   }
 }

@@ -1,5 +1,34 @@
+import { Fancybox } from "@fancyapps/ui";
+import Hammer from "hammerjs";
+import Toastify from 'toastify-js'
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+
+    let cartsss = document.querySelectorAll(".popular__item_descr-btn");
+
+    cartsss.forEach(item => {
+        item.addEventListener("click", (e) => {
+            
+            Toastify({
+                text: "Товар добавлен в корзину",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #64CC44, #20AC5F)",
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
+        })
+    })
 
     $('.owl-carousel2').slick({
         dots: true,
@@ -103,6 +132,15 @@ document.addEventListener("DOMContentLoaded", function() {
         "overlay-catalog-active"
     );
 
+    const categoryMenu = document.querySelector(".overlay-catalog");
+
+    
+    Hammer(categoryMenu).on('swipeleft', () => {
+        let overlayCatalog1 = document.querySelector(".overlay-catalog");
+        overlayCatalog1.classList.remove("overlay-catalog-active");
+        document.querySelector("body").style.overflow = "unset";
+    });
+
 
     function toggleClassItems(myClass, myClassActive) {
         let myItemClass = document.querySelectorAll(myClass);
@@ -169,6 +207,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     headerMenuClose.addEventListener('click', () => {
+        headerMenu.classList.toggle("header-menu-active");
+    });
+
+    const menu = document.querySelector(".header-menu__nav");
+
+    Hammer(menu).on('swipeleft', () => {
         headerMenu.classList.toggle("header-menu-active");
     });
 
@@ -372,6 +416,23 @@ document.addEventListener("DOMContentLoaded", function() {
         postData(mainForm);
     }
 
-
-
+    function moveSmooth(classMove) {
+        document.querySelectorAll(classMove).forEach((item) => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const element = document.querySelector(this.getAttribute('href'));
+                let rect = element.getBoundingClientRect().top + window.scrollY; 
+                //Кол-во пикселей до элемента прибавляем к кол-ву пикселей которые пролистали(там где нажали на ссылку)
+                if(screen.width <= "659") { // Проверка на то, есть ли верхний сайтбар(для моб устройств)
+                    window.scroll({top: rect - 65, behavior: 'smooth'});
+                } else {
+                    window.scroll({top: rect, behavior: 'smooth'});
+                }
+            });
+        });
+    }
+    moveSmooth(".pageup");
+    if(document.querySelector(".reviews__rating_btn")) {
+        moveSmooth(".reviews__rating_btn");
+    }
 })

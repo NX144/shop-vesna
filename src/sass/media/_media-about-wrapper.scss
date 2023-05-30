@@ -46,6 +46,9 @@
         .container-60 {
             width: 95% !important;
         }
+        .slick-dots {
+            bottom: -90px !important;
+        }
         .about {
             &__block {
                 &-text {
@@ -73,6 +76,9 @@
 }
 @media (max-width: 786px) {
     .about__wrapper {
+        .slick-dots {
+            bottom: -10px !important;
+        }
         .about {
             &__block {
                 &-descr {

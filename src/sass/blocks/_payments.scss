@@ -43,6 +43,7 @@
         align-items: center;
         margin-top: 26px;
         &_wrap {
+            width: max-content;
             height: auto;
             display: flex;
             align-items: center;
@@ -51,7 +52,7 @@
                 margin-right: 0;
             }
             img {
-                width: max-content;
+                width: auto;
                 height: auto;
             }
         }
