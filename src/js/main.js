@@ -11,24 +11,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let cartsss = document.querySelectorAll(".popular__item_descr-btn");
 
-    cartsss.forEach(item => {
-        item.addEventListener("click", (e) => {
-            
-            Toastify({
-                text: "Товар добавлен в корзину",
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    background: "linear-gradient(to right, #64CC44, #20AC5F)",
-                },
-                onClick: function(){} // Callback after click
-            }).showToast();
+    if(cartsss.length > 0) {
+        cartsss.forEach(item => {
+            item.addEventListener("click", (e) => {
+                
+                Toastify({
+                    text: "Товар добавлен в корзину",
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: "linear-gradient(to right, #64CC44, #20AC5F)",
+                    },
+                    onClick: function(){} // Callback after click
+                }).showToast();
+            })
         })
-    })
+    }
 
     $('.owl-carousel2').slick({
         dots: true,
